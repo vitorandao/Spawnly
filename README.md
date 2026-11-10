@@ -492,7 +492,7 @@ npm start</code></pre>
 <tr>
 <td align="center"><b>Nathaniel</b></td>
 <td align="center"><img src="https://img.shields.io/badge/A_DEFINIR-214032?style=flat-square" alt="A definir"></td>
-<td>Função ainda não confirmada pelo grupo. Sugestões: testes de qualidade, documentação, curadoria de seeds e suporte ao front-end</td>
+<td>frontEnd. Sugestões: testes de qualidade, documentação, curadoria de seeds e suporte ao front-end</td>
 </tr>
 </table>
 
