@@ -27,6 +27,7 @@ function criarApp(db) {
     app.use('/api/preferencias', require('./routes/preferencias')(db));
     app.use('/api/recomendar', require('./routes/recomendar')(db));
     app.use('/api/catalogos', require('./routes/catalogos')(db));
+    app.use('/api/mapa', require('./routes/mapa')());
 
     app.use('/assets', express.static(assets));
     app.use(express.static(frontend, { extensions: ['html'] }));
