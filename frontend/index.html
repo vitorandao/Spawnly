@@ -8,37 +8,125 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/api.js" defer></script>
   <script src="js/index.js" defer></script>
+  <script src="js/questionario.js" defer></script>
 </head>
 <body>
 <header class="topo">
   <a class="marca" href="index.html">Spawnly</a>
-  <nav aria-label="Principal"><a href="index.html" aria-current="page">Inicio</a><a href="questionario.html">Questionario</a><a href="resultados.html">Recomendacoes</a><a href="gerenciar.html">Gerenciar seeds</a></nav>
+  <nav aria-label="Principal"><a href="index.html" aria-current="page">Inicio</a><a href="resultados.html">Recomendacoes</a><a href="gerenciar.html">Gerenciar seeds</a></nav>
 </header>
 <main>
   <section class="hero">
     <div><p class="sobretitulo">SEEDS REAIS, ESCOLHAS SUAS</p><h1>Encontre seu mundo perfeito.</h1>
-    <p>Escolha a edicao, a versao, os biomas e as estruturas. O Spawnly consulta o catalogo e calcula a compatibilidade de cada seed.</p>
-    <a class="btn" href="#jogador">Comecar agora</a></div>
+    <p>Escolha a edicao, a versao, os biomas e as estruturas. O Spawnly consulta o catalogo e calcula a compatibilidade de cada seed.</p></div>
     <img src="/assets/logo.svg" alt="Logotipo Spawnly">
   </section>
 
   <p id="status-api" class="aviso" role="status">Verificando servidor...</p>
 
-  <section id="jogador" class="grade-dupla" aria-label="Escolher jogador">
-    <form id="form-existente" class="bloco">
-      <p class="etiqueta">JOGADOR EXISTENTE</p><h2>Continuar uma jornada</h2>
-      <label for="usuario-existente">Usuario</label>
-      <select id="usuario-existente" required><option value="">Carregando usuarios...</option></select>
-      <button class="btn" type="submit">Continuar</button>
-    </form>
-    <form id="form-novo" class="bloco">
-      <p class="etiqueta">NOVO JOGADOR</p><h2>Criar usuario</h2>
-      <label for="nome">Nome</label><input id="nome" maxlength="80" required>
-      <div class="campos">
+  <section class="estreito" aria-labelledby="titulo-questionario">
+    <p class="etiqueta">QUESTIONARIO DE PREFERENCIAS</p>
+    <h2 id="titulo-questionario">Monte seu mundo ideal</h2>
+    <form id="form-questionario" class="bloco">
+      <fieldset><legend>Edicao e versao</legend><div class="campos">
         <div><label for="edicao">Edicao</label><select id="edicao" required><option>Java</option><option>Bedrock</option></select></div>
-        <div><label for="versao">Versao</label><input id="versao" maxlength="12" value="1.21" pattern="[0-9]{1,2}\.[0-9]{1,3}(\.[0-9]{1,3})?" required></div>
-      </div>
-      <button class="btn" type="submit">Cadastrar e continuar</button>
+        <div><label for="versao">Versao instalada</label><input id="versao" list="lista-versoes" maxlength="12" value="1.21" pattern="[0-9]{1,2}\.[0-9]{1,3}(\.[0-9]{1,3})?" required><datalist id="lista-versoes"></datalist></div>
+      </div></fieldset>
+      <fieldset><legend>Dimensão</legend>
+        <div class="abas-dimensao" role="radiogroup" aria-label="Dimensao dos biomas">
+          <label class="aba-dimensao" for="dimensao-superficie" id="aba-superficie"><input type="radio" name="dimensao-bioma" id="dimensao-superficie" value="superficie" data-dimensao="superficie" checked>Overworld</label>
+          <label class="aba-dimensao" for="dimensao-nether" id="aba-nether"><input type="radio" name="dimensao-bioma" id="dimensao-nether" value="nether" data-dimensao="nether">Nether</label>
+          <label class="aba-dimensao" for="dimensao-end" id="aba-end"><input type="radio" name="dimensao-bioma" id="dimensao-end" value="end" data-dimensao="end">End</label>
+        </div>
+      </fieldset>
+      <fieldset><legend>Bioma</legend>
+        <!-- Biomas do Overworld -->
+        <div class="grupo-biomas" data-grupo-dimensao="superficie">
+          <h3>Overworld</h3>
+          <div class="abas-dimensao" role="radiogroup" aria-label="Biomas do Overworld">
+            <label class="aba-dimensao" for="bioma-overworld-plains"><input type="radio" name="bioma" id="bioma-overworld-plains" value="plains" required checked><img src="biomas/plains.png" alt="Plains">Plains</label>
+            <label class="aba-dimensao" for="bioma-overworld-sunflower-plains"><input type="radio" name="bioma" id="bioma-overworld-sunflower-plains" value="sunflower-plains"><img src="biomas/sunflower-plains.png" alt="Sunflower Plains">Sunflower Plains</label>
+            <label class="aba-dimensao" for="bioma-overworld-forest"><input type="radio" name="bioma" id="bioma-overworld-forest" value="forest"><img src="biomas/forest.png" alt="Forest">Forest</label>
+            <label class="aba-dimensao" for="bioma-overworld-flower-forest"><input type="radio" name="bioma" id="bioma-overworld-flower-forest" value="flower-forest"><img src="biomas/flower-forest.png" alt="Flower Forest">Flower Forest</label>
+            <label class="aba-dimensao" for="bioma-overworld-birch-forest"><input type="radio" name="bioma" id="bioma-overworld-birch-forest" value="birch-forest"><img src="biomas/birch-forest.png" alt="Birch Forest">Birch Forest</label>
+            <label class="aba-dimensao" for="bioma-overworld-old-growth-birch-forest"><input type="radio" name="bioma" id="bioma-overworld-old-growth-birch-forest" value="old-growth-birch-forest"><img src="biomas/old-growth-birch-forest.png" alt="Old Growth Birch Forest">Old Growth Birch Forest</label>
+            <label class="aba-dimensao" for="bioma-overworld-dark-forest"><input type="radio" name="bioma" id="bioma-overworld-dark-forest" value="dark-forest"><img src="biomas/dark-forest.png" alt="Dark Forest">Dark Forest</label>
+            <label class="aba-dimensao" for="bioma-overworld-pale-garden"><input type="radio" name="bioma" id="bioma-overworld-pale-garden" value="pale-garden"><img src="biomas/pale-garden.png" alt="Pale Garden">Pale Garden</label>
+            <label class="aba-dimensao" for="bioma-overworld-taiga"><input type="radio" name="bioma" id="bioma-overworld-taiga" value="taiga"><img src="biomas/taiga.png" alt="Taiga">Taiga</label>
+            <label class="aba-dimensao" for="bioma-overworld-old-growth-pine-taiga"><input type="radio" name="bioma" id="bioma-overworld-old-growth-pine-taiga" value="old-growth-pine-taiga"><img src="biomas/old-growth-pine-taiga.png" alt="Old Growth Pine Taiga">Old Growth Pine Taiga</label>
+            <label class="aba-dimensao" for="bioma-overworld-old-growth-spruce-taiga"><input type="radio" name="bioma" id="bioma-overworld-old-growth-spruce-taiga" value="old-growth-spruce-taiga"><img src="biomas/old-growth-spruce-taiga.png" alt="Old Growth Spruce Taiga">Old Growth Spruce Taiga</label>
+            <label class="aba-dimensao" for="bioma-overworld-snowy-taiga"><input type="radio" name="bioma" id="bioma-overworld-snowy-taiga" value="snowy-taiga"><img src="biomas/snowy-taiga.png" alt="Snowy Taiga">Snowy Taiga</label>
+            <label class="aba-dimensao" for="bioma-overworld-snowy-plains"><input type="radio" name="bioma" id="bioma-overworld-snowy-plains" value="snowy-plains"><img src="biomas/snowy-plains.png" alt="Snowy Plains">Snowy Plains</label>
+            <label class="aba-dimensao" for="bioma-overworld-ice-spikes"><input type="radio" name="bioma" id="bioma-overworld-ice-spikes" value="ice-spikes"><img src="biomas/ice-spikes.png" alt="Ice Spikes">Ice Spikes</label>
+            <label class="aba-dimensao" for="bioma-overworld-frozen-river"><input type="radio" name="bioma" id="bioma-overworld-frozen-river" value="frozen-river"><img src="biomas/frozen-river.png" alt="Frozen River">Frozen River</label>
+            <label class="aba-dimensao" for="bioma-overworld-snowy-beach"><input type="radio" name="bioma" id="bioma-overworld-snowy-beach" value="snowy-beach"><img src="biomas/snowy-beach.png" alt="Snowy Beach">Snowy Beach</label>
+            <label class="aba-dimensao" for="bioma-overworld-desert"><input type="radio" name="bioma" id="bioma-overworld-desert" value="desert"><img src="biomas/desert.png" alt="Desert">Desert</label>
+            <label class="aba-dimensao" for="bioma-overworld-savanna"><input type="radio" name="bioma" id="bioma-overworld-savanna" value="savanna"><img src="biomas/savanna.png" alt="Savanna">Savanna</label>
+            <label class="aba-dimensao" for="bioma-overworld-savanna-plateau"><input type="radio" name="bioma" id="bioma-overworld-savanna-plateau" value="savanna-plateau"><img src="biomas/savanna-plateau.png" alt="Savanna Plateau">Savanna Plateau</label>
+            <label class="aba-dimensao" for="bioma-overworld-windswept-savanna"><input type="radio" name="bioma" id="bioma-overworld-windswept-savanna" value="windswept-savanna"><img src="biomas/windswept-savanna.png" alt="Windswept Savanna">Windswept Savanna</label>
+            <label class="aba-dimensao" for="bioma-overworld-jungle"><input type="radio" name="bioma" id="bioma-overworld-jungle" value="jungle"><img src="biomas/jungle.png" alt="Jungle">Jungle</label>
+            <label class="aba-dimensao" for="bioma-overworld-sparse-jungle"><input type="radio" name="bioma" id="bioma-overworld-sparse-jungle" value="sparse-jungle"><img src="biomas/sparse-jungle.png" alt="Sparse Jungle">Sparse Jungle</label>
+            <label class="aba-dimensao" for="bioma-overworld-bamboo-jungle"><input type="radio" name="bioma" id="bioma-overworld-bamboo-jungle" value="bamboo-jungle"><img src="biomas/bamboo-jungle.png" alt="Bamboo Jungle">Bamboo Jungle</label>
+            <label class="aba-dimensao" for="bioma-overworld-swamp"><input type="radio" name="bioma" id="bioma-overworld-swamp" value="swamp"><img src="biomas/swamp.png" alt="Swamp">Swamp</label>
+            <label class="aba-dimensao" for="bioma-overworld-mangrove-swamp"><input type="radio" name="bioma" id="bioma-overworld-mangrove-swamp" value="mangrove-swamp"><img src="biomas/mangrove-swamp.png" alt="Mangrove Swamp">Mangrove Swamp</label>
+            <label class="aba-dimensao" for="bioma-overworld-badlands"><input type="radio" name="bioma" id="bioma-overworld-badlands" value="badlands"><img src="biomas/badlands.png" alt="Badlands">Badlands</label>
+            <label class="aba-dimensao" for="bioma-overworld-eroded-badlands"><input type="radio" name="bioma" id="bioma-overworld-eroded-badlands" value="eroded-badlands"><img src="biomas/eroded-badlands.png" alt="Eroded Badlands">Eroded Badlands</label>
+            <label class="aba-dimensao" for="bioma-overworld-wooded-badlands"><input type="radio" name="bioma" id="bioma-overworld-wooded-badlands" value="wooded-badlands"><img src="biomas/wooded-badlands.png" alt="Wooded Badlands">Wooded Badlands</label>
+            <label class="aba-dimensao" for="bioma-overworld-meadow"><input type="radio" name="bioma" id="bioma-overworld-meadow" value="meadow"><img src="biomas/meadow.png" alt="Meadow">Meadow</label>
+            <label class="aba-dimensao" for="bioma-overworld-cherry-grove"><input type="radio" name="bioma" id="bioma-overworld-cherry-grove" value="cherry-grove"><img src="biomas/cherry-grove.png" alt="Cherry Grove">Cherry Grove</label>
+            <label class="aba-dimensao" for="bioma-overworld-grove"><input type="radio" name="bioma" id="bioma-overworld-grove" value="grove"><img src="biomas/grove.png" alt="Grove">Grove</label>
+            <label class="aba-dimensao" for="bioma-overworld-snowy-slopes"><input type="radio" name="bioma" id="bioma-overworld-snowy-slopes" value="snowy-slopes"><img src="biomas/snowy-slopes.png" alt="Snowy Slopes">Snowy Slopes</label>
+            <label class="aba-dimensao" for="bioma-overworld-frozen-peaks"><input type="radio" name="bioma" id="bioma-overworld-frozen-peaks" value="frozen-peaks"><img src="biomas/frozen-peaks.png" alt="Frozen Peaks">Frozen Peaks</label>
+            <label class="aba-dimensao" for="bioma-overworld-jagged-peaks"><input type="radio" name="bioma" id="bioma-overworld-jagged-peaks" value="jagged-peaks"><img src="biomas/jagged-peaks.png" alt="Jagged Peaks">Jagged Peaks</label>
+            <label class="aba-dimensao" for="bioma-overworld-stony-peaks"><input type="radio" name="bioma" id="bioma-overworld-stony-peaks" value="stony-peaks"><img src="biomas/stony-peaks.png" alt="Stony Peaks">Stony Peaks</label>
+            <label class="aba-dimensao" for="bioma-overworld-windswept-hills"><input type="radio" name="bioma" id="bioma-overworld-windswept-hills" value="windswept-hills"><img src="biomas/windswept-hills.png" alt="Windswept Hills">Windswept Hills</label>
+            <label class="aba-dimensao" for="bioma-overworld-windswept-gravelly-hills"><input type="radio" name="bioma" id="bioma-overworld-windswept-gravelly-hills" value="windswept-gravelly-hills"><img src="biomas/windswept-gravelly-hills.png" alt="Windswept Gravelly Hills">Windswept Gravelly Hills</label>
+            <label class="aba-dimensao" for="bioma-overworld-windswept-forest"><input type="radio" name="bioma" id="bioma-overworld-windswept-forest" value="windswept-forest"><img src="biomas/windswept-forest.png" alt="Windswept Forest">Windswept Forest</label>
+            <label class="aba-dimensao" for="bioma-overworld-stony-shore"><input type="radio" name="bioma" id="bioma-overworld-stony-shore" value="stony-shore"><img src="biomas/stony-shore.png" alt="Stony Shore">Stony Shore</label>
+            <label class="aba-dimensao" for="bioma-overworld-river"><input type="radio" name="bioma" id="bioma-overworld-river" value="river"><img src="biomas/river.png" alt="River">River</label>
+            <label class="aba-dimensao" for="bioma-overworld-beach"><input type="radio" name="bioma" id="bioma-overworld-beach" value="beach"><img src="biomas/beach.png" alt="Beach">Beach</label>
+            <label class="aba-dimensao" for="bioma-overworld-mushroom-fields"><input type="radio" name="bioma" id="bioma-overworld-mushroom-fields" value="mushroom-fields"><img src="biomas/mushroom-fields.png" alt="Mushroom Fields">Mushroom Fields</label>
+            <label class="aba-dimensao" for="bioma-overworld-ocean"><input type="radio" name="bioma" id="bioma-overworld-ocean" value="ocean"><img src="biomas/ocean.png" alt="Ocean">Ocean</label>
+            <label class="aba-dimensao" for="bioma-overworld-deep-ocean"><input type="radio" name="bioma" id="bioma-overworld-deep-ocean" value="deep-ocean"><img src="biomas/deep-ocean.png" alt="Deep Ocean">Deep Ocean</label>
+            <label class="aba-dimensao" for="bioma-overworld-cold-ocean"><input type="radio" name="bioma" id="bioma-overworld-cold-ocean" value="cold-ocean"><img src="biomas/cold-ocean.png" alt="Cold Ocean">Cold Ocean</label>
+            <label class="aba-dimensao" for="bioma-overworld-deep-cold-ocean"><input type="radio" name="bioma" id="bioma-overworld-deep-cold-ocean" value="deep-cold-ocean"><img src="biomas/deep-cold-ocean.png" alt="Deep Cold Ocean">Deep Cold Ocean</label>
+            <label class="aba-dimensao" for="bioma-overworld-frozen-ocean"><input type="radio" name="bioma" id="bioma-overworld-frozen-ocean" value="frozen-ocean"><img src="biomas/frozen-ocean.png" alt="Frozen Ocean">Frozen Ocean</label>
+            <label class="aba-dimensao" for="bioma-overworld-deep-frozen-ocean"><input type="radio" name="bioma" id="bioma-overworld-deep-frozen-ocean" value="deep-frozen-ocean"><img src="biomas/deep-frozen-ocean.png" alt="Deep Frozen Ocean">Deep Frozen Ocean</label>
+            <label class="aba-dimensao" for="bioma-overworld-lukewarm-ocean"><input type="radio" name="bioma" id="bioma-overworld-lukewarm-ocean" value="lukewarm-ocean"><img src="biomas/lukewarm-ocean.png" alt="Lukewarm Ocean">Lukewarm Ocean</label>
+            <label class="aba-dimensao" for="bioma-overworld-deep-lukewarm-ocean"><input type="radio" name="bioma" id="bioma-overworld-deep-lukewarm-ocean" value="deep-lukewarm-ocean"><img src="biomas/deep-lukewarm-ocean.png" alt="Deep Lukewarm Ocean">Deep Lukewarm Ocean</label>
+            <label class="aba-dimensao" for="bioma-overworld-warm-ocean"><input type="radio" name="bioma" id="bioma-overworld-warm-ocean" value="warm-ocean"><img src="biomas/warm-ocean.png" alt="Warm Ocean">Warm Ocean</label>
+            <label class="aba-dimensao" for="bioma-overworld-lush-caves"><input type="radio" name="bioma" id="bioma-overworld-lush-caves" value="lush-caves"><img src="biomas/lush-caves.png" alt="Lush Caves">Lush Caves</label>
+            <label class="aba-dimensao" for="bioma-overworld-dripstone-caves"><input type="radio" name="bioma" id="bioma-overworld-dripstone-caves" value="dripstone-caves"><img src="biomas/dripstone-caves.png" alt="Dripstone Caves">Dripstone Caves</label>
+            <label class="aba-dimensao" for="bioma-overworld-deep-dark"><input type="radio" name="bioma" id="bioma-overworld-deep-dark" value="deep-dark"><img src="biomas/deep-dark.png" alt="Deep Dark">Deep Dark</label>
+          </div>
+        </div>
+        <!-- Biomas do Nether -->
+        <div class="grupo-biomas" data-grupo-dimensao="nether" hidden>
+          <h3>Nether</h3>
+          <div class="abas-dimensao" role="radiogroup" aria-label="Biomas do Nether">
+            <label class="aba-dimensao" for="bioma-nether-nether-wastes"><input type="radio" name="bioma" id="bioma-nether-nether-wastes" value="nether-wastes"><img src="biomas/nether-wastes.png" alt="Nether Wastes">Nether Wastes</label>
+            <label class="aba-dimensao" for="bioma-nether-crimson-forest"><input type="radio" name="bioma" id="bioma-nether-crimson-forest" value="crimson-forest"><img src="biomas/crimson-forest.png" alt="Crimson Forest">Crimson Forest</label>
+            <label class="aba-dimensao" for="bioma-nether-warped-forest"><input type="radio" name="bioma" id="bioma-nether-warped-forest" value="warped-forest"><img src="biomas/warped-forest.png" alt="Warped Forest">Warped Forest</label>
+            <label class="aba-dimensao" for="bioma-nether-soul-sand-valley"><input type="radio" name="bioma" id="bioma-nether-soul-sand-valley" value="soul-sand-valley"><img src="biomas/soul-sand-valley.png" alt="Soul Sand Valley">Soul Sand Valley</label>
+            <label class="aba-dimensao" for="bioma-nether-basalt-deltas"><input type="radio" name="bioma" id="bioma-nether-basalt-deltas" value="basalt-deltas"><img src="biomas/basalt-deltas.png" alt="Basalt Deltas">Basalt Deltas</label>
+          </div>
+        </div>
+        <!-- Biomas do End -->
+        <div class="grupo-biomas" data-grupo-dimensao="end" hidden>
+          <h3>End</h3>
+          <div class="abas-dimensao" role="radiogroup" aria-label="Biomas do End">
+            <label class="aba-dimensao" for="bioma-end-the-end"><input type="radio" name="bioma" id="bioma-end-the-end" value="the-end"><img src="biomas/the-end.png" alt="The End">The End</label>
+            <label class="aba-dimensao" for="bioma-end-end-highlands"><input type="radio" name="bioma" id="bioma-end-end-highlands" value="end-highlands"><img src="biomas/end-highlands.png" alt="End Highlands">End Highlands</label>
+            <label class="aba-dimensao" for="bioma-end-end-midlands"><input type="radio" name="bioma" id="bioma-end-end-midlands" value="end-midlands"><img src="biomas/end-midlands.png" alt="End Midlands">End Midlands</label>
+            <label class="aba-dimensao" for="bioma-end-small-end-islands"><input type="radio" name="bioma" id="bioma-end-small-end-islands" value="small-end-islands"><img src="biomas/small-end-islands.png" alt="Small End Islands">Small End Islands</label>
+            <label class="aba-dimensao" for="bioma-end-end-barrens"><input type="radio" name="bioma" id="bioma-end-end-barrens" value="end-barrens"><img src="biomas/end-barrens.png" alt="End Barrens">End Barrens</label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset><legend>Estruturas desejadas <span>ate 40 pontos</span></legend><div id="opcoes-estruturas" class="opcoes" aria-live="polite"></div></fieldset>
+      <fieldset><legend>Estilo de jogo</legend><div id="opcoes-estilos" class="opcoes" aria-live="polite"></div></fieldset>
+      <p id="mensagem" class="mensagem" role="alert"></p>
+      <button class="btn" type="submit">Salvar e ver recomendacoes</button>
     </form>
   </section>
 

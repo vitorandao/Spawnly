@@ -3,6 +3,7 @@ require('dotenv').config();
 const fs = require('node:fs');
 const path = require('node:path');
 const mysql = require('mysql2/promise');
+const { biomasMinecraft } = require('../data/biomas-minecraft');
 
 const BANCO_PERMITIDO = 'spawnly_integracao';
 const TABELAS_ESPERADAS = [
@@ -66,6 +67,12 @@ async function main() {
         } else {
             console.log('Esquema existente reconhecido; os dados foram preservados.');
         }
+
+        // Adiciona o catálogo atualizado sem modificar biomas já existentes.
+        await conexao.query(
+            'INSERT IGNORE INTO spawnly_integracao.biomas (slug, nome) VALUES ?',
+            [biomasMinecraft.map(({ slug, nome }) => [slug, nome])]
+        );
 
         const usuarioSql = `\`${config.usuario}\`@'localhost'`;
         await conexao.query(`CREATE USER IF NOT EXISTS ${usuarioSql} IDENTIFIED BY ?`, [config.senha]);

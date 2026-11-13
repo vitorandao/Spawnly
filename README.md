@@ -394,6 +394,7 @@ A rota <code>/api/recomendar</code> compara <b>edição</b>, <b>versão</b>, <b>
 sudo DB_ADMIN_SOCKET=/run/mysqld/mysqld.sock node scripts/setup-database.js</code></pre>
 
 <p>O instalador aceita somente <code>spawnly_integracao</code>, não executa <code>DROP</code> e nunca consulta nem altera <code>seedcraft</code>. Se detectar um esquema parcial, ele para sem apagar dados.</p>
+<p>Para adicionar novos biomas ao catálogo existente, execute o instalador novamente; ele inclui os biomas ausentes e preserva os registros existentes.</p>
 
 <h3>Passo 4: Configurar a conexão</h3>
 
