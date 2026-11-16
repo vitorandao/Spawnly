@@ -28,13 +28,7 @@ function card(seed, indice) {
     const rotulo = document.createElement('label');
     const id = `compat-${seed.id}`; rotulo.htmlFor = id; rotulo.textContent = `Compatibilidade: ${seed.pontuacao}%`;
     const barra = document.createElement('progress'); barra.id = id; barra.max = 100; barra.value = seed.pontuacao;
-    const mapa = document.createElement('a');
-    mapa.className = 'btn sec';
-    mapa.textContent = 'Visualizar mapa';
-    mapa.href = '/mapa/mapa.html?' + new URLSearchParams({
-        seed: String(seed.codigo), edicao: String(seed.edicao), versao: String(seed.versao)
-    }).toString();
-    item.append(posicao, titulo, codigo, selos, detalhes, rotulo, barra, mapa);
+    item.append(posicao, titulo, codigo, selos, detalhes, rotulo, barra);
     return item;
 }
 
