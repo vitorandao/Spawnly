@@ -13,13 +13,13 @@
 <body>
 <header class="topo">
   <a class="marca" href="index.html">Spawnly</a>
-  <nav aria-label="Principal"><a href="index.html" aria-current="page">Inicio</a></nav>
+  <nav aria-label="Principal"><a href="index.html" aria-current="page">Inicio</a><a href="mapa/mapa.html">Mapa</a></nav>
 </header>
 <main>
   <section class="hero">
-    <div><p class="sobretitulo">SEEDS REAIS, ESCOLHAS SUAS</p><h1>Encontre seu mundo perfeito.</h1>
+    <div><p class="sobretitulo"></p><h1>Encontre seu mundo perfeito.</h1>
     <p>Escolha a edicao, a versao, os biomas e as estruturas. O Spawnly consulta o catalogo e calcula a compatibilidade de cada seed.</p></div>
-    <img src="/assets/logo.svg" alt="Logotipo Spawnly">
+    <img src="../assets/logo.svg" alt="Logotipo Spawnly">
   </section>
 
   <p id="status-api" class="aviso" role="status">Verificando servidor...</p>
@@ -148,12 +148,12 @@
         </div>
       </fieldset>
       <p id="mensagem" class="mensagem" role="alert"></p>
-      <button class="btn" type="submit">Salvar e ver recomendações</button>
+      <a class="btn" href="mapa/mapa.html">Criar seed</a>
     </form>
   </section>
 
   <section aria-labelledby="como-funciona"><p class="etiqueta">ROTA DE EXPLORACAO</p><h2 id="como-funciona">Como funciona</h2>
-    <ol class="passos"><li><strong>01</strong><h3>Escolha</h3><p>Cadastre ou selecione seu jogador.</p></li><li><strong>02</strong><h3>Responda</h3><p>Defina biomas, estruturas e estilo.</p></li><li><strong>03</strong><h3>Explore</h3><p>Receba seeds ordenadas por pontuacao.</p></li></ol>
+    <ol class="passos"><li><strong>01</strong><h3>Escolha</h3><p>Escolha sua edição e versão.</p></li><li><strong>02</strong><h3>Responda</h3><p>Defina biomas, estruturas e estilo.</p></li><li><strong>03</strong><h3>Explore</h3><p>Receba seeds ordenadas por pontuacao.</p></li></ol>
   </section>
 </main>
 <footer class="rodape">Spawnly — projeto academico de CRUD</footer>
