@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root {
   --fundo: #0d1914;
   --painel: #172b22;
@@ -24,7 +26,7 @@ body {
   margin: 0;
   background: radial-gradient(circle at 80% 0, #204430 0, transparent 34%), var(--fundo);
   color: var(--texto);
-  font: 16px/1.55 system-ui, -apple-system, Segoe UI, sans-serif;
+  font: 12px/1.8 "Press Start 2P", monospace;
 }
 
 a {
@@ -99,12 +101,16 @@ h3 {
 h1 {
   max-width: 850px;
   margin: .2em 0;
-  font-size: clamp(2.35rem, 6vw, 5.4rem);
-  letter-spacing: -.045em;
+  font-size: clamp(1.3rem, 3vw, 2.3rem);
+  letter-spacing: 0;
 }
 
 h2 {
-  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+h3 {
+  font-size: .95rem;
 }
 
 p {
@@ -130,7 +136,8 @@ p {
 
 .hero p:not(.sobretitulo) {
   max-width: 660px;
-  font-size: 1.15rem;
+  font-size: .9rem;
+  line-height: 1.9;
 }
 
 .hero img {
