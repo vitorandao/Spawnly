@@ -496,7 +496,7 @@ npm start</code></pre>
 <td>Função ainda não confirmada pelo grupo. Sugestões: testes de qualidade, documentação, curadoria de seeds e suporte ao front-end</td>
 </tr>
    <td align="center"><b>Beatriz</b></td>
-<td align="center"><img src="https://img.shields.io/badge/A_FRONT--END-214032?style=flat-square" alt="FRONT--END"></td>
+<td align="center"><img src="https://img.shields.io/badge/_FRONT--END-214032?style=flat-square" alt="FRONT--END"></td>
 <td> Sugestões:Suporte ao front-end</td>
 </tr>
 </table>
