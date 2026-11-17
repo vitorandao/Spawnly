@@ -7,5 +7,6 @@
       "includeFiles": "native/gerar_mapa",
       "maxDuration": 20
     }
-  }
+  },
+  "outputDirectory": "."
 }
