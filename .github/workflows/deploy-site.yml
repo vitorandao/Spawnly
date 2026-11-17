@@ -1,0 +1,47 @@
+name: Deploy site no Vercel
+
+on:
+  push:
+    branches: [main, site-vercel]
+    paths: ['site/**', '.github/workflows/deploy-site.yml']
+  workflow_dispatch:
+
+concurrency:
+  group: vercel-site
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verificar token
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "::error::Falta o secret VERCEL_TOKEN (Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar Vercel CLI
+        run: npm i -g vercel@latest
+
+      - name: Vincular projeto "spawnly"
+        run: vercel link --yes --project spawnly --token "$VERCEL_TOKEN"
+
+      - name: Deploy em produção
+        id: deploy
+        run: |
+          url=$(vercel deploy --prod --yes --token "$VERCEL_TOKEN")
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+          echo "### Site no ar: $url" >> "$GITHUB_STEP_SUMMARY"
+          echo "Site no ar: $url"
