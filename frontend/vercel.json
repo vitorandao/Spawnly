@@ -9,7 +9,10 @@
       "maxDuration": 20
     },
     "api/backend.js": {
-      "maxDuration": 20
+      "maxDuration": 60
+    },
+    "api/migrate-blob.js": {
+      "maxDuration": 60
     }
   },
   "rewrites": [
