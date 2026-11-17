@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spawnly · Encontre seu mundo perfeito</title>
+  <meta name="description" content="Spawnly recomenda seeds de Minecraft com base no seu estilo de jogo. Projeto acadêmico CRUD em HTML, CSS, JavaScript, Node.js, Express e MySQL.">
+  <meta property="og:title" content="Spawnly · Encontre seu mundo perfeito">
+  <meta property="og:description" content="Questionário de preferências e recomendações personalizadas de seeds para Minecraft.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#152820">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --floresta:#152820; --musgo:#214032; --grama:#4ca66a; --grama2:#69c57e;
+      --ouro:#f5c969; --folhagem:#eff6f0; --areia:#fff4d9; --suave:#b7c9bd;
+      --fundo:#0d1914; --borda:#355b48;
+      --pixel:"Press Start 2P",monospace; --mono:"VT323",monospace;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--fundo);color:var(--folhagem);font:22px/1.35 var(--mono);-webkit-font-smoothing:none}
+    img{image-rendering:pixelated;max-width:100%}
+    a{color:inherit}
+    .wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+
+    /* topo */
+    .topo{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--floresta) 92%,transparent);backdrop-filter:blur(6px);border-bottom:4px solid #0b1510}
+    .topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:64px}
+    .marca{display:flex;align-items:center;gap:12px;font:14px var(--pixel);text-decoration:none;color:var(--ouro)}
+    .marca i{width:20px;height:20px;background:var(--grama);box-shadow:inset -4px -4px 0 #2e7a48,inset 4px 4px 0 #8fdca6}
+    nav{display:flex;gap:22px;font-size:22px}
+    nav a{text-decoration:none;color:var(--suave)}
+    nav a:hover{color:var(--ouro)}
+
+    /* botões estilo Minecraft */
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;font:12px/1 var(--pixel);text-decoration:none;color:var(--floresta);background:var(--ouro);border:0;cursor:pointer;
+      box-shadow:inset -4px -4px 0 #b88f2e,inset 4px 4px 0 #ffe7a6,0 4px 0 #0b1510;transition:transform .08s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn:active{transform:translateY(2px);box-shadow:inset 4px 4px 0 #b88f2e,0 0 0 #0b1510}
+    .btn.alt{background:var(--musgo);color:var(--folhagem);box-shadow:inset -4px -4px 0 #132a20,inset 4px 4px 0 #3a6a52,0 4px 0 #0b1510}
+
+    /* hero */
+    .hero{position:relative;overflow:hidden;background:var(--floresta);border-bottom:6px solid #0b1510}
+    .ceu{position:absolute;inset:0;pointer-events:none}
+    .ceu span{position:absolute;width:6px;height:6px;background:var(--musgo);animation:pisca 3s steps(2) infinite}
+    @keyframes pisca{50%{background:var(--grama)}}
+    .hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:90px 0 120px}
+    .conquista{display:inline-flex;align-items:center;gap:14px;background:#212121;border:4px solid #555;padding:10px 16px 10px 10px;margin-bottom:28px;box-shadow:0 4px 0 #000}
+    .conquista img{width:32px;height:32px;background:#3a3a3a;padding:4px}
+    .conquista b{display:block;font:10px var(--pixel);color:var(--ouro);margin-bottom:4px}
+    .conquista small{font-size:20px;color:#ddd}
+    h1{font:clamp(26px,4.4vw,48px)/1.25 var(--pixel);margin:0 0 22px;color:var(--areia);text-shadow:4px 4px 0 #0b1510}
+    h1 em{font-style:normal;color:var(--grama2)}
+    .lead{font-size:26px;color:var(--suave);max-width:34ch;margin:0 0 34px}
+    .acoes{display:flex;flex-wrap:wrap;gap:16px}
+    .logo-hero{width:100%;border:6px solid #0b1510;box-shadow:12px 12px 0 #0b1510}
+    .chao{position:absolute;left:0;right:0;bottom:0;height:42px;
+      background:linear-gradient(var(--grama) 0 12px,#2e7a48 12px 16px,#6b4a2b 16px);
+      background-size:auto}
+    .chao::after{content:"";position:absolute;inset:16px 0 0;background:repeating-linear-gradient(90deg,transparent 0 36px,#5a3d22 36px 42px)}
+
+    section{padding:96px 0}
+    .tag{display:inline-block;font:10px var(--pixel);color:var(--floresta);background:var(--grama);padding:8px 12px;margin-bottom:18px}
+    h2{font:clamp(18px,2.6vw,28px)/1.4 var(--pixel);margin:0 0 18px;color:var(--areia)}
+    .sub{color:var(--suave);font-size:24px;max-width:60ch;margin:0 0 48px}
+
+    /* jornada / hotbar */
+    .hotbar{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:6px solid #0b1510;background:#2b2b2b}
+    .slot{padding:28px 22px;border:4px solid #555;border-color:#8b8b8b #373737 #373737 #8b8b8b;background:#3b3b3b;min-height:220px;position:relative}
+    .slot:hover{outline:4px solid #fff;outline-offset:-8px}
+    .slot .n{position:absolute;top:12px;right:14px;font:12px var(--pixel);color:var(--ouro)}
+    .slot img{width:48px;height:48px;margin-bottom:16px}
+    .slot h3{font:12px/1.5 var(--pixel);margin:0 0 10px;color:var(--folhagem)}
+    .slot p{margin:0;color:#cfcfcf;font-size:21px}
+
+    /* dimensões */
+    .dims{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .dim{background:var(--floresta);border:4px solid var(--borda);box-shadow:8px 8px 0 #0b1510;overflow:hidden}
+    .dim .img{aspect-ratio:16/10;display:grid;place-items:center;background:var(--folhagem);border-bottom:4px solid var(--borda)}
+    .dim .img img{height:72%;mix-blend-mode:multiply}
+    .dim div.c{padding:20px 22px 24px}
+    .dim h3{font:13px var(--pixel);margin:0 0 10px}
+    .dim p{margin:0 0 14px;color:var(--suave)}
+    .icones{display:flex;flex-wrap:wrap;gap:6px}
+    .icones img{width:32px;height:32px;background:#0b1510;padding:4px;border:2px solid var(--borda)}
+
+    /* crud */
+    .faixa{background:var(--floresta);border-block:6px solid #0b1510}
+    .crud{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .op{background:var(--musgo);padding:26px 22px;border:4px solid #0b1510;box-shadow:inset 0 -6px 0 #132a20}
+    .op b{display:block;font:14px var(--pixel);color:var(--grama2);margin-bottom:14px}
+    .op p{margin:0;color:var(--folhagem)}
+
+    /* crafting */
+    .craft{display:grid;grid-template-columns:auto auto 1fr;align-items:center;gap:36px}
+    .grade{display:grid;grid-template-columns:repeat(3,110px);gap:6px;background:#8b8b8b;padding:10px;border:4px solid #0b1510;box-shadow:inset -4px -4px 0 #555,inset 4px 4px 0 #c6c6c6}
+    .grade span{height:90px;display:grid;place-items:center;background:#8b8b8b;border:4px solid;border-color:#373737 #fff #fff #373737;font:10px var(--pixel);color:#2b2b2b;text-align:center;padding:4px}
+    .seta{font:36px var(--pixel);color:var(--ouro)}
+    .resultado{display:flex;align-items:center;gap:22px}
+    .resultado .out{width:130px;height:130px;display:grid;place-items:center;background:#8b8b8b;border:6px solid;border-color:#373737 #fff #fff #373737}
+    .resultado .out img{width:84px;height:84px}
+    .resultado p{margin:0;color:var(--suave)}
+    .resultado b{display:block;font:13px var(--pixel);color:var(--areia);margin-bottom:10px}
+
+    /* arquitetura */
+    .arq{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:14px}
+    .arq .s{align-self:center}
+    .bloco{background:var(--floresta);border:4px solid var(--borda);padding:24px;text-align:center}
+    .bloco b{display:block;font:11px var(--pixel);color:var(--ouro);margin-bottom:10px}
+    .bloco span{color:var(--suave)}
+    .arq .s{font:18px var(--pixel);color:var(--grama2)}
+
+    /* terminal */
+    .term{background:#050a07;border:4px solid var(--borda);box-shadow:8px 8px 0 #0b1510;padding:22px 26px;overflow:auto}
+    .term pre{margin:0;font:22px/1.45 var(--mono);color:var(--grama2)}
+    .term .c{color:#5f7d6a}
+    .term .y{color:var(--ouro)}
+
+    /* equipe */
+    .party{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+    .player{background:var(--floresta);border:4px solid var(--borda);padding:22px}
+    .player .avatar{width:56px;height:56px;margin-bottom:14px;display:grid;grid-template-columns:repeat(4,1fr);border:3px solid #0b1510}
+    .player .avatar i{display:block}
+    .player b{display:block;font:12px var(--pixel);color:var(--areia);margin-bottom:8px}
+    .player p{margin:0;color:var(--suave);font-size:20px}
+
+    footer{background:#0b1510;padding:48px 0;text-align:center;color:var(--suave)}
+    footer p{margin:6px 0}
+    footer .f{font:11px var(--pixel);color:var(--ouro)}
+    footer a{overflow-wrap:anywhere}
+
+    @media (max-width:900px){
+      .hero .wrap{grid-template-columns:1fr;padding:60px 0 100px}
+      .hotbar,.crud{grid-template-columns:repeat(2,1fr)}
+      .dims{grid-template-columns:1fr}
+      .craft{grid-template-columns:1fr;justify-items:start}
+      .seta{transform:rotate(90deg)}
+      .arq{grid-template-columns:1fr}.arq .s{transform:rotate(90deg);justify-self:center}
+      nav{display:none}
+    }
+    @media (max-width:520px){
+      .hotbar,.crud{grid-template-columns:1fr}
+      .grade{grid-template-columns:repeat(3,84px)}.grade span{height:72px;font-size:8px}
+    }
+    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#"><i></i>SPAWNLY</a>
+    <nav aria-label="Seções">
+      <a href="#jornada">Jornada</a>
+      <a href="#dimensoes">Dimensões</a>
+      <a href="#tecnologias">Tecnologias</a>
+      <a href="#rodar">Rodar local</a>
+      <a href="#party">Equipe</a>
+    </nav>
+    <a class="btn alt" href="https://github.com/vitorandao/Spawnly" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="ceu" id="ceu" aria-hidden="true"></div>
+    <div class="wrap">
+      <div>
+        <div class="conquista" role="note">
+          <img src="biomas/cherry-grove.png" alt="">
+          <div><b>Advancement Made!</b><small>Você encontrou o Spawnly.</small></div>
+        </div>
+        <h1>Encontre seu <em>mundo</em> perfeito.</h1>
+        <p class="lead">Responda um questionário sobre edição, bioma, modo de jogo e estruturas. O Spawnly devolve seeds verificadas, ordenadas por compatibilidade com o seu estilo.</p>
+        <div class="acoes">
+          <a class="btn" href="https://github.com/vitorandao/Spawnly" target="_blank" rel="noopener">▶ Ver repositório</a>
+          <a class="btn alt" href="#rodar">Rodar localmente</a>
+        </div>
+      </div>
+      <img class="logo-hero" src="assets/logo.svg" alt="Logotipo Spawnly em pixel art">
+    </div>
+    <div class="chao" aria-hidden="true"></div>
+  </div>
+
+  <section id="jornada">
+    <div class="wrap">
+      <span class="tag">01 · JORNADA DO JOGADOR</span>
+      <h2>Quatro slots até o spawn ideal</h2>
+      <p class="sub">Do cadastro à recomendação, sem login falso e sem seed aleatória: só mundos já registrados e testados no banco.</p>
+      <div class="hotbar">
+        <article class="slot"><span class="n">1</span><img src="biomas/plains.png" alt=""><h3>Entrar</h3><p>Informe seu nome de usuário, edição e versão do jogo.</p></article>
+        <article class="slot"><span class="n">2</span><img src="biomas/jungle.png" alt=""><h3>Questionário</h3><p>Java ou Bedrock, bioma, modo de jogo e estruturas desejadas.</p></article>
+        <article class="slot"><span class="n">3</span><img src="biomas/mushroom-fields.png" alt=""><h3>Recomendações</h3><p>Cards com o código da seed, versão, características e nota de compatibilidade.</p></article>
+        <article class="slot"><span class="n">4</span><img src="biomas/lush-caves.png" alt=""><h3>Refinar</h3><p>Ajuste os filtros sem repetir todo o processo.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="dimensoes" style="padding-top:0">
+    <div class="wrap">
+      <span class="tag">02 · DIMENSÕES</span>
+      <h2>Biomas das três dimensões</h2>
+      <p class="sub">O questionário cobre os biomas do Overworld, do Nether e do End, cada um com o ícone do próprio jogo.</p>
+      <div class="dims">
+        <article class="dim">
+          <div class="img"><img src="assets/overword.jpg" alt=""></div>
+          <div class="c"><h3 style="color:var(--grama2)">Overworld</h3><p>Planícies, florestas, oceanos, cavernas e picos.</p>
+            <div class="icones"><img src="biomas/plains.png" alt="Plains"><img src="biomas/cherry-grove.png" alt="Cherry Grove"><img src="biomas/desert.png" alt="Desert"><img src="biomas/snowy-plains.png" alt="Snowy Plains"><img src="biomas/badlands.png" alt="Badlands"><img src="biomas/dark-forest.png" alt="Dark Forest"><img src="biomas/ocean.png" alt="Ocean"><img src="biomas/ice-spikes.png" alt="Ice Spikes"><img src="biomas/deep-dark.png" alt="Deep Dark"></div></div>
+        </article>
+        <article class="dim">
+          <div class="img"><img src="assets/nether.jpg" alt=""></div>
+          <div class="c"><h3 style="color:#e57373">Nether</h3><p>Florestas carmesim e distorcida, vales de areia das almas.</p>
+            <div class="icones"><img src="biomas/crimson-forest.png" alt="Crimson Forest"><img src="biomas/warped-forest.png" alt="Warped Forest"><img src="biomas/soul-sand-valley.png" alt="Soul Sand Valley"><img src="biomas/basalt-deltas.png" alt="Basalt Deltas"></div></div>
+        </article>
+        <article class="dim">
+          <div class="img"><img src="assets/end.jpg" alt=""></div>
+          <div class="c"><h3 style="color:#c8a2f0">The End</h3><p>Ilhas centrais e terras altas do End.</p>
+            <div class="icones"><img src="biomas/the-end.png" alt="The End"><img src="biomas/end-highlands.png" alt="End Highlands"></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="faixa">
+    <section>
+      <div class="wrap">
+        <span class="tag">03 · CRUD</span>
+        <h2>Tudo conectado ao banco</h2>
+        <p class="sub">Nenhum botão de enfeite: cada ação conversa com a API REST e com o MySQL/MariaDB.</p>
+        <div class="crud">
+          <div class="op"><b>CREATE</b><p>Cadastrar usuários, preferências e seeds.</p></div>
+          <div class="op"><b>READ</b><p>Consultar cadastros, catálogo e recomendações.</p></div>
+          <div class="op"><b>UPDATE</b><p>Editar dados do usuário, filtros e seeds.</p></div>
+          <div class="op"><b>DELETE</b><p>Excluir registros mediante confirmação.</p></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="tecnologias">
+    <div class="wrap">
+      <span class="tag">04 · CRAFTING TABLE</span>
+      <h2>Receita do projeto</h2>
+      <p class="sub">Front-end em HTML, CSS e JavaScript puros; back-end em Node.js com Express; dados em MySQL/MariaDB.</p>
+      <div class="craft">
+        <div class="grade" aria-label="Grade de crafting com as tecnologias">
+          <span>HTML5</span><span>CSS3</span><span>JS</span>
+          <span>Node</span><span>Express</span><span>MySQL</span>
+          <span>mysql2</span><span>dotenv</span><span>SQL DDL</span>
+        </div>
+        <div class="seta" aria-hidden="true">→</div>
+        <div class="resultado">
+          <div class="out"><img src="assets/favicon.svg" alt=""></div>
+          <div><b>Spawnly ×1</b><p>Uma API REST com rotas para usuários, preferências, seeds, catálogos e recomendação.</p></div>
+        </div>
+      </div>
+
+      <div style="height:64px"></div>
+      <div class="arq">
+        <div class="bloco"><b>FRONT-END</b><span>HTML5 + CSS3 + JS<br>no navegador</span></div>
+        <div class="s" aria-hidden="true">⇄</div>
+        <div class="bloco"><b>BACK-END</b><span>Node.js + Express<br>API REST</span></div>
+        <div class="s" aria-hidden="true">⇄</div>
+        <div class="bloco"><b>DADOS</b><span>MySQL / MariaDB<br>usuários · preferências · seeds</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rodar" style="padding-top:0">
+    <div class="wrap">
+      <span class="tag">05 · INICIANDO O SERVIDOR</span>
+      <h2>Rode na sua máquina</h2>
+      <p class="sub">O app completo precisa do banco de dados. Siga o README do repositório para os detalhes de cada passo.</p>
+      <div class="term">
+<pre><span class="c"># 1. clone o mundo</span>
+git clone https://github.com/vitorandao/Spawnly.git
+cd Spawnly/backend
+
+<span class="c"># 2. instale as dependências</span>
+npm install
+
+<span class="c"># 3. configure o banco em backend/.env</span>
+<span class="y">DB_HOST</span>=127.0.0.1   <span class="y">DB_PORT</span>=3306
+<span class="y">DB_USER</span>=spawnly_app <span class="y">DB_NAME</span>=spawnly_integracao
+
+<span class="c"># 4. teste e suba o servidor</span>
+npm test
+npm start      <span class="c"># → http://localhost:3000</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <div class="faixa">
+    <section id="party">
+      <div class="wrap">
+        <span class="tag">06 · PARTY</span>
+        <h2>A equipe</h2>
+        <p class="sub">Projeto acadêmico do Centro Universitário do Distrito Federal (UDF).</p>
+        <div class="party">
+          <div class="player"><div class="avatar" data-cor="#4ca66a"></div><b>Vitor</b><p>Modelagem e SQL, páginas HTML5, CSS responsivo e integração dos formulários.</p></div>
+          <div class="player"><div class="avatar" data-cor="#f5c969"></div><b>Caetano</b><p>Projeto Node.js, Express e conexão reutilizável com o banco.</p></div>
+          <div class="player"><div class="avatar" data-cor="#6fa8dc"></div><b>João Lima</b><p>CRUD de seeds, usuários e preferências, regras de recomendação e validação.</p></div>
+          <div class="player"><div class="avatar" data-cor="#c8a2f0"></div><b>Nathaniel</b><p>Testes, documentação e curadoria de seeds.</p></div>
+          <div class="player"><div class="avatar" data-cor="#e57373"></div><b>Beatriz</b><p>Suporte ao front-end.</p></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="f">SPAWNLY</p>
+    <p>Que o seu próximo mundo seja o melhor já gerado.</p>
+    <p><a href="https://github.com/vitorandao/Spawnly" target="_blank" rel="noopener">github.com/vitorandao/Spawnly</a></p>
+    <p style="font-size:17px;opacity:.7">Projeto sem vínculo com a Mojang ou a Microsoft. Minecraft é marca registrada da Mojang Studios.</p>
+  </div>
+</footer>
+
+<script>
+  // estrelas em pixel no céu do hero
+  (function(){
+    var ceu=document.getElementById('ceu'),f=document.createDocumentFragment();
+    for(var i=0;i<60;i++){var s=document.createElement('span');
+      s.style.left=(Math.random()*100)+'%';s.style.top=(Math.random()*80)+'%';
+      s.style.animationDelay=(Math.random()*3)+'s';f.appendChild(s);}
+    ceu.appendChild(f);
+  })();
+  // avatares 4x4 gerados a partir do nome
+  document.querySelectorAll('.avatar').forEach(function(a){
+    var nome=a.parentElement.querySelector('b').textContent,cor=a.dataset.cor,h=0;
+    for(var i=0;i<nome.length;i++)h=(h*31+nome.charCodeAt(i))>>>0;
+    for(var j=0;j<16;j++){var x=j%4,bit=(h>>((j>>2)*2+(x<2?x:3-x)))&1,c=document.createElement('i');
+      c.style.background=bit?cor:'#0b1510';a.appendChild(c);}
+  });
+</script>
+</body>
+</html>
