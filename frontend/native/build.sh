@@ -16,8 +16,8 @@ mapfile -t sources < <(awk '
    gsub(/^[[:space:]]+|[[:space:]]+$/, "")
    if ($0 ~ /\.c$/) print "cubiomes/" $0
  }' cubiomes/CMakeLists.txt)
-test "\${#sources[@]}" -gt 5
-gcc -O2 -fwrapv -I cubiomes gerar_mapa.c "\${sources[@]}" -lm -o gerar_mapa
+test "${#sources[@]}" -gt 5
+gcc -O2 -fwrapv -I cubiomes gerar_mapa.c "${sources[@]}" -lm -o gerar_mapa
 chmod 755 gerar_mapa
 ./gerar_mapa 12345 1.21.11 0 0 | node -e "
 let s='';
