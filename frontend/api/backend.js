@@ -20,7 +20,7 @@ module.exports=async function handler(req,res){
   const params={route,...(id!=null?{id}:{}),...(req.query?.usuario_id!=null?{usuario_id:req.query.usuario_id}:{})};
   const userToken=String(req.headers['x-spawnly-user-token']||'');
   const raw=method==='GET'?null:(typeof req.body==='string'?JSON.parse(req.body):req.body||{});
-  const upstream=await bridge({method,params,body:raw,scope,userToken});
+  const upstream=await bridge({method,params,body:raw,scope,userToken,oidcToken:String(req.headers['x-vercel-oidc-token']||'')});
   return res.status(upstream.status).json(upstream.data);
  }catch(e){
   console.error('Render integration:',e.name,e.message?.slice(0,160));
