@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": "bash native/build.sh && cp -R ../backend ./backend && mkdir -p dist && cp -R *.html *.jpg css js mapa biomas assets dist/",
+  "buildCommand": "NODE_PATH=$PWD/node_modules node --test ../backend/test/*.test.js && bash native/build.sh && cp -R ../backend ./backend && mkdir -p dist && cp -R *.html *.jpg css js mapa biomas assets dist/",
   "functions": {
     "api/mapa.js": {
       "includeFiles": "native/gerar_mapa",
