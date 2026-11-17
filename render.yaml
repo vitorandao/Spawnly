@@ -2,25 +2,6 @@
 # Usa o PostgreSQL existente no workspace Render; nao cria nem altera o banco.
 services:
   - type: web
-    name: spawnly-postgres-api
-    runtime: node
-    plan: free
-    region: virginia
-    rootDir: .
-    branch: feature/spawnly-render-postgres-integration-20261117
-    buildCommand: cd render-bridge && npm install --omit=dev
-    startCommand: node render-bridge/server.js
-    # Verificacao TCP temporaria durante a inicializacao do catalogo SQL.
-    # /health continua disponivel para verificacao explicita PostgreSQL.
-    envVars:
-      - key: NODE_ENV
-        value: production
-      - key: DATABASE_URL
-        fromDatabase:
-          name: spawnly-db
-          property: connectionString
-
-  - type: web
     name: spawnly-postgres-api-v2
     runtime: node
     plan: free
