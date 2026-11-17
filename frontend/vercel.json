@@ -10,9 +10,6 @@
     },
     "api/backend.js": {
       "maxDuration": 60
-    },
-    "api/migrate-blob.js": {
-      "maxDuration": 60
     }
   },
   "rewrites": [
