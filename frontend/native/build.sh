@@ -9,10 +9,15 @@ if [ ! -d cubiomes/.git ]; then
 fi
 git -C cubiomes fetch --quiet --depth 1 origin "$PIN"
 git -C cubiomes checkout --force --quiet FETCH_HEAD
-cmake -S cubiomes -B cubiomes/build -DCMAKE_BUILD_TYPE=Release
-cmake --build cubiomes/build --config Release --target cubiomes_static -j2
-gcc -O2 -Wall -Wextra -fwrapv -I cubiomes gerar_mapa.c \
-  -L cubiomes/build -lcubiomes_static -lm -o gerar_mapa
+mapfile -t sources < <(awk '
+ /^set\(SOURCES/ { inside=1; next }
+ inside && /^\)/ { exit }
+ inside {
+   gsub(/^[[:space:]]+|[[:space:]]+$/, "")
+   if ($0 ~ /\.c$/) print "cubiomes/" $0
+ }' cubiomes/CMakeLists.txt)
+test "\${#sources[@]}" -gt 5
+gcc -O2 -fwrapv -I cubiomes gerar_mapa.c "\${sources[@]}" -lm -o gerar_mapa
 chmod 755 gerar_mapa
 ./gerar_mapa 12345 1.21.11 0 0 | node -e "
 let s='';
