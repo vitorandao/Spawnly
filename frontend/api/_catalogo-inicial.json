@@ -1,0 +1,3869 @@
+{
+  "biomas": [
+    {
+      "id": 1,
+      "slug": "planicies",
+      "nome": "Planícies"
+    },
+    {
+      "id": 2,
+      "slug": "florestas",
+      "nome": "Florestas"
+    },
+    {
+      "id": 3,
+      "slug": "cherry_grove",
+      "nome": "Floresta de cerejeiras"
+    },
+    {
+      "id": 4,
+      "slug": "montanhas",
+      "nome": "Montanhas"
+    },
+    {
+      "id": 5,
+      "slug": "picos_nevados",
+      "nome": "Picos nevados"
+    },
+    {
+      "id": 6,
+      "slug": "desertos",
+      "nome": "Desertos"
+    },
+    {
+      "id": 7,
+      "slug": "savanas",
+      "nome": "Savanas"
+    },
+    {
+      "id": 8,
+      "slug": "selvas",
+      "nome": "Selvas"
+    },
+    {
+      "id": 9,
+      "slug": "pantanos",
+      "nome": "Pântanos"
+    },
+    {
+      "id": 10,
+      "slug": "manguezais",
+      "nome": "Manguezais"
+    },
+    {
+      "id": 11,
+      "slug": "taiga",
+      "nome": "Taiga"
+    },
+    {
+      "id": 12,
+      "slug": "taiga_nevada",
+      "nome": "Taiga nevada"
+    },
+    {
+      "id": 13,
+      "slug": "oceanos_ilhas",
+      "nome": "Oceanos e ilhas"
+    },
+    {
+      "id": 14,
+      "slug": "badlands",
+      "nome": "Badlands"
+    },
+    {
+      "id": 15,
+      "slug": "cogumelos",
+      "nome": "Campos de cogumelos"
+    },
+    {
+      "id": 16,
+      "slug": "raros",
+      "nome": "Biomas raros"
+    },
+    {
+      "id": 17,
+      "slug": "varios_proximos",
+      "nome": "Vários biomas próximos"
+    }
+  ],
+  "estruturas": [
+    {
+      "id": 1,
+      "slug": "village",
+      "nome": "Vila"
+    },
+    {
+      "id": 2,
+      "slug": "trial_chambers",
+      "nome": "Trial Chambers"
+    },
+    {
+      "id": 3,
+      "slug": "ancient_city",
+      "nome": "Ancient City"
+    },
+    {
+      "id": 4,
+      "slug": "stronghold",
+      "nome": "Stronghold"
+    },
+    {
+      "id": 5,
+      "slug": "mansion",
+      "nome": "Woodland Mansion"
+    },
+    {
+      "id": 6,
+      "slug": "pillager_outpost",
+      "nome": "Pillager Outpost"
+    },
+    {
+      "id": 7,
+      "slug": "desert_temple",
+      "nome": "Desert Temple"
+    },
+    {
+      "id": 8,
+      "slug": "jungle_temple",
+      "nome": "Jungle Temple"
+    },
+    {
+      "id": 9,
+      "slug": "ocean_monument",
+      "nome": "Ocean Monument"
+    },
+    {
+      "id": 10,
+      "slug": "shipwreck",
+      "nome": "Shipwreck"
+    },
+    {
+      "id": 11,
+      "slug": "ruined_portal",
+      "nome": "Ruined Portal"
+    },
+    {
+      "id": 12,
+      "slug": "bastion",
+      "nome": "Bastion"
+    },
+    {
+      "id": 13,
+      "slug": "fortress",
+      "nome": "Nether Fortress"
+    },
+    {
+      "id": 14,
+      "slug": "mineshaft",
+      "nome": "Mineshaft"
+    },
+    {
+      "id": 15,
+      "slug": "ocean_ruins",
+      "nome": "Ocean Ruins"
+    },
+    {
+      "id": 16,
+      "slug": "buried_treasure",
+      "nome": "Tesouro enterrado"
+    }
+  ],
+  "versoes": [
+    {
+      "id": 1,
+      "edicao": "Ambas",
+      "versao_texto": "1.21",
+      "versao_min": "1.21.0",
+      "versao_max": "1.21.99",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099
+    },
+    {
+      "id": 2,
+      "edicao": "Java",
+      "versao_texto": "1.20-1.21",
+      "versao_min": "1.20.0",
+      "versao_max": "1.21.99",
+      "versao_min_num": 1020000,
+      "versao_max_num": 1021099
+    },
+    {
+      "id": 3,
+      "edicao": "Bedrock",
+      "versao_texto": "1.21.x",
+      "versao_min": "1.21.0",
+      "versao_max": "1.21.99",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099
+    },
+    {
+      "id": 4,
+      "edicao": "Java",
+      "versao_texto": "1.21",
+      "versao_min": "1.21.0",
+      "versao_max": "1.21.99",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099
+    },
+    {
+      "id": 5,
+      "edicao": "Java",
+      "versao_texto": "1.21.2",
+      "versao_min": "1.21.2",
+      "versao_max": "1.21.2",
+      "versao_min_num": 1021002,
+      "versao_max_num": 1021002
+    },
+    {
+      "id": 6,
+      "edicao": "Java",
+      "versao_texto": "1.21.4",
+      "versao_min": "1.21.4",
+      "versao_max": "1.21.4",
+      "versao_min_num": 1021004,
+      "versao_max_num": 1021004
+    },
+    {
+      "id": 7,
+      "edicao": "Bedrock",
+      "versao_texto": "1.21.4",
+      "versao_min": "1.21.4",
+      "versao_max": "1.21.4",
+      "versao_min_num": 1021004,
+      "versao_max_num": 1021004
+    },
+    {
+      "id": 8,
+      "edicao": "Bedrock",
+      "versao_texto": "1.21",
+      "versao_min": "1.21.0",
+      "versao_max": "1.21.99",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099
+    },
+    {
+      "id": 9,
+      "edicao": "Java",
+      "versao_texto": "1.20-1.21.11",
+      "versao_min": "1.20.0",
+      "versao_max": "1.21.11",
+      "versao_min_num": 1020000,
+      "versao_max_num": 1021011
+    },
+    {
+      "id": 10,
+      "edicao": "Java",
+      "versao_texto": "1.21.5",
+      "versao_min": "1.21.5",
+      "versao_max": "1.21.5",
+      "versao_min_num": 1021005,
+      "versao_max_num": 1021005
+    },
+    {
+      "id": 11,
+      "edicao": "Bedrock",
+      "versao_texto": "1.20.6",
+      "versao_min": "1.20.6",
+      "versao_max": "1.20.6",
+      "versao_min_num": 1020006,
+      "versao_max_num": 1020006
+    },
+    {
+      "id": 12,
+      "edicao": "Java",
+      "versao_texto": "1.20.4",
+      "versao_min": "1.20.4",
+      "versao_max": "1.20.4",
+      "versao_min_num": 1020004,
+      "versao_max_num": 1020004
+    },
+    {
+      "id": 13,
+      "edicao": "Java",
+      "versao_texto": "26.3",
+      "versao_min": "26.3.0",
+      "versao_max": "26.3.99",
+      "versao_min_num": 26003000,
+      "versao_max_num": 26003099
+    },
+    {
+      "id": 14,
+      "edicao": "Bedrock",
+      "versao_texto": "26.51",
+      "versao_min": "26.51.0",
+      "versao_max": "26.51.99",
+      "versao_min_num": 26051000,
+      "versao_max_num": 26051099
+    },
+    {
+      "id": 15,
+      "edicao": "Bedrock",
+      "versao_texto": "1.20-1.21.11",
+      "versao_min": "1.20.0",
+      "versao_max": "1.21.11",
+      "versao_min_num": 1020000,
+      "versao_max_num": 1021011
+    },
+    {
+      "id": 16,
+      "edicao": "Java",
+      "versao_texto": "1.19-1.21.11",
+      "versao_min": "1.19.0",
+      "versao_max": "1.21.11",
+      "versao_min_num": 1019000,
+      "versao_max_num": 1021011
+    },
+    {
+      "id": 17,
+      "edicao": "Bedrock",
+      "versao_texto": "1.21.130",
+      "versao_min": "1.21.130",
+      "versao_max": "1.21.130",
+      "versao_min_num": 1021130,
+      "versao_max_num": 1021130
+    },
+    {
+      "id": 18,
+      "edicao": "Bedrock",
+      "versao_texto": "1.21.0",
+      "versao_min": "1.21.0",
+      "versao_max": "1.21.0",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021000
+    }
+  ],
+  "estilos": [
+    {
+      "id": 13,
+      "slug": "survival_tradicional",
+      "nome": "Survival tradicional"
+    },
+    {
+      "id": 14,
+      "slug": "survival_desafiador",
+      "nome": "Survival desafiador"
+    },
+    {
+      "id": 15,
+      "slug": "hardcore",
+      "nome": "Hardcore"
+    },
+    {
+      "id": 16,
+      "slug": "criativo",
+      "nome": "Criativo"
+    },
+    {
+      "id": 17,
+      "slug": "speedrun",
+      "nome": "Speedrun"
+    },
+    {
+      "id": 18,
+      "slug": "exploracao",
+      "nome": "Exploração"
+    },
+    {
+      "id": 19,
+      "slug": "construcao",
+      "nome": "Construção"
+    },
+    {
+      "id": 20,
+      "slug": "multiplayer_coop",
+      "nome": "Multiplayer cooperativo"
+    },
+    {
+      "id": 21,
+      "slug": "ilhas",
+      "nome": "Sobrevivência em ilhas"
+    },
+    {
+      "id": 22,
+      "slug": "cavernas",
+      "nome": "Exploração de cavernas"
+    }
+  ],
+  "seeds": [
+    {
+      "id": 1,
+      "codigo": "4167799982467607063",
+      "nome": "Vila de planície ao lado de cerejeiras",
+      "edicao_versao_id": 1,
+      "edicao": "Ambas",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Fonte XGC cita Java 1.21 e Bedrock 1.21.0; EXL cita só Java 1.21. Compatibilidade com Bedrock é afirmação da fonte.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "planicies",
+          "nome": "Planícies"
+        },
+        {
+          "slug": "cherry_grove",
+          "nome": "Floresta de cerejeiras"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "codigo": "29151576",
+      "nome": "Planície pequena dentro de cherry grove",
+      "edicao_versao_id": 1,
+      "edicao": "Ambas",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "XGC cita ninho de abelhas e encostas nevadas a leste; EXL cita Pillager Outpost dentro do cherry grove.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "planicies",
+          "nome": "Planícies"
+        },
+        {
+          "slug": "cherry_grove",
+          "nome": "Floresta de cerejeiras"
+        },
+        {
+          "slug": "montanhas",
+          "nome": "Montanhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "pillager_outpost",
+          "nome": "Pillager Outpost",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "codigo": "9064150133272194",
+      "nome": "Cherry grove ao lado de cânion",
+      "edicao_versao_id": 2,
+      "edicao": "Java",
+      "versao": "1.20-1.21",
+      "versao_min_num": 1020000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": "Vila descrita como minúscula.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "cherry_grove",
+          "nome": "Floresta de cerejeiras"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "codigo": "-2032795982907864146",
+      "nome": "Cherry grove sobre vila no lago",
+      "edicao_versao_id": 3,
+      "edicao": "Bedrock",
+      "versao": "1.21.x",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "cherry_grove",
+          "nome": "Floresta de cerejeiras"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "codigo": "888880777356331877",
+      "nome": "Vale de cerejeiras com duas vilas",
+      "edicao_versao_id": 3,
+      "edicao": "Bedrock",
+      "versao": "1.21.x",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "alto",
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "cherry_grove",
+          "nome": "Floresta de cerejeiras"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "codigo": "-3110026074691520618",
+      "nome": "Cherry grove pequeno com vila próxima",
+      "edicao_versao_id": 1,
+      "edicao": "Ambas",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Fonte dá vila em (192,48) no Java e (200,136) no Bedrock; cherry grove em (150,-57). Coordenadas da vila diferem por edição.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "cherry_grove",
+          "nome": "Floresta de cerejeiras"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": 192,
+          "coord_z": 48
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "codigo": "879583942",
+      "nome": "Círculo de cerejeiras",
+      "edicao_versao_id": 1,
+      "edicao": "Ambas",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "spawn",
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Fonte afirma teste em Java e Bedrock 1.21; coordenadas adicionais não foram vistas.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "cherry_grove",
+          "nome": "Floresta de cerejeiras"
+        }
+      ],
+      "estruturas": []
+    },
+    {
+      "id": 8,
+      "codigo": "8667245532688270355",
+      "nome": "Spawn em cherry grove",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "0,0",
+      "dificuldade": 4,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "planicies",
+          "nome": "Planícies"
+        },
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        },
+        {
+          "slug": "cherry_grove",
+          "nome": "Floresta de cerejeiras"
+        },
+        {
+          "slug": "montanhas",
+          "nome": "Montanhas"
+        },
+        {
+          "slug": "picos_nevados",
+          "nome": "Picos nevados"
+        },
+        {
+          "slug": "varios_proximos",
+          "nome": "Vários biomas próximos"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": 229,
+          "coord_x": 224,
+          "coord_z": 48
+        },
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": 231,
+          "coord_x": 128,
+          "coord_z": 192
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 279,
+          "coord_x": 272,
+          "coord_z": 64
+        },
+        {
+          "slug": "stronghold",
+          "nome": "Stronghold",
+          "dist_spawn": 1426,
+          "coord_x": -238,
+          "coord_z": -1406
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "codigo": "-7215224875276709517",
+      "nome": "Spawn em floresta com cherry grove",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "0,0",
+      "dificuldade": 4,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        },
+        {
+          "slug": "cherry_grove",
+          "nome": "Floresta de cerejeiras"
+        },
+        {
+          "slug": "savanas",
+          "nome": "Savanas"
+        },
+        {
+          "slug": "selvas",
+          "nome": "Selvas"
+        },
+        {
+          "slug": "varios_proximos",
+          "nome": "Vários biomas próximos"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 429,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "codigo": "191",
+      "nome": "Pântano de mangue com vila de savana",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "savanas",
+          "nome": "Savanas"
+        },
+        {
+          "slug": "manguezais",
+          "nome": "Manguezais"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "codigo": "9705",
+      "nome": "Vila no deserto perto de recife",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Recife de coral quente próximo ao spawn.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "desertos",
+          "nome": "Desertos"
+        },
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "codigo": "1738801",
+      "nome": "Recife de coral ao lado de vila no deserto",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "desertos",
+          "nome": "Desertos"
+        },
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "codigo": "929568499221",
+      "nome": "Vila no meio do pântano",
+      "edicao_versao_id": 3,
+      "edicao": "Bedrock",
+      "versao": "1.21.x",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "pantanos",
+          "nome": "Pântanos"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "codigo": "1040934860",
+      "nome": "Ilha caveira com vila no deserto",
+      "edicao_versao_id": 3,
+      "edicao": "Bedrock",
+      "versao": "1.21.x",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Vila sobre uma lush cave. Outra fonte (gameskinny) cita spawn em X -112 Z -128 sem informar edição.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "desertos",
+          "nome": "Desertos"
+        },
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "codigo": "-1996523481016217001",
+      "nome": "Mini-oceano circular com naufrágio",
+      "edicao_versao_id": 3,
+      "edicao": "Bedrock",
+      "versao": "1.21.x",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "shipwreck",
+          "nome": "Shipwreck",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "codigo": "521873",
+      "nome": "Pântano com sapos e slimes",
+      "edicao_versao_id": 3,
+      "edicao": "Bedrock",
+      "versao": "1.21.x",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Fonte também cita Bogged.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "pantanos",
+          "nome": "Pântanos"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "buried_treasure",
+          "nome": "Tesouro enterrado",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "codigo": "1539682405972721628",
+      "nome": "Vila de taiga em ilha",
+      "edicao_versao_id": 5,
+      "edicao": "Java",
+      "versao": "1.21.2",
+      "versao_min_num": 1021002,
+      "versao_max_num": 1021002,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "taiga",
+          "nome": "Taiga"
+        },
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": -304,
+          "coord_z": 0
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "codigo": "1606377695512438131",
+      "nome": "Vila de savana com formação rochosa vertical",
+      "edicao_versao_id": 6,
+      "edicao": "Java",
+      "versao": "1.21.4",
+      "versao_min_num": 1021004,
+      "versao_max_num": 1021004,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "savanas",
+          "nome": "Savanas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "shipwreck",
+          "nome": "Shipwreck",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "buried_treasure",
+          "nome": "Tesouro enterrado",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "mineshaft",
+          "nome": "Mineshaft",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "codigo": "-4056461929217980211",
+      "nome": "Spawn em meadow vazio",
+      "edicao_versao_id": 7,
+      "edicao": "Bedrock",
+      "versao": "1.21.4",
+      "versao_min_num": 1021004,
+      "versao_max_num": 1021004,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": "Fonte descreve como bom para construção.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "planicies",
+          "nome": "Planícies"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "codigo": "-7417157268905316998",
+      "nome": "Início fácil Bedrock",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Fonte indica tudo ao alcance do spawn e testado no Bedrock 1.21; distâncias não vistas.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "ocean_ruins",
+          "nome": "Ocean Ruins",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "codigo": "9009245503860775875",
+      "nome": "Vila de taiga em rio congelado",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": 4,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": "Mesmo código no Bedrock tem outro mundo (ver registro Bedrock).",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "pantanos",
+          "nome": "Pântanos"
+        },
+        {
+          "slug": "taiga",
+          "nome": "Taiga"
+        },
+        {
+          "slug": "taiga_nevada",
+          "nome": "Taiga nevada"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 368,
+          "coord_x": 0,
+          "coord_z": -368
+        },
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": null,
+          "coord_x": 85,
+          "coord_z": -264
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "codigo": "9009245503860775875",
+      "nome": "Ilha de oásis no deserto",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "desertos",
+          "nome": "Desertos"
+        },
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "desert_temple",
+          "nome": "Desert Temple",
+          "dist_spawn": null,
+          "coord_x": -504,
+          "coord_z": 616
+        },
+        {
+          "slug": "ocean_ruins",
+          "nome": "Ocean Ruins",
+          "dist_spawn": null,
+          "coord_x": -504,
+          "coord_z": 472
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "codigo": "102",
+      "nome": "Floresta com abelhas, câmaras e cidade antiga",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Ancient City em 128,-34,-240.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": 128,
+          "coord_z": -240
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "codigo": "4009",
+      "nome": "Posto, vila e cidade antiga juntos",
+      "edicao_versao_id": 3,
+      "edicao": "Bedrock",
+      "versao": "1.21.x",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [],
+      "estruturas": [
+        {
+          "slug": "pillager_outpost",
+          "nome": "Pillager Outpost",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "codigo": "3211213744707030873",
+      "nome": "Cidade costeira",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Cidade nos penhascos sobre oceano frio, y=-41.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": -603,
+          "coord_z": 166
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "codigo": "2422215857861955386",
+      "nome": "Spawn dentro de cidade antiga",
+      "edicao_versao_id": 9,
+      "edicao": "Java",
+      "versao": "1.20-1.21.11",
+      "versao_min_num": 1020000,
+      "versao_max_num": 1021011,
+      "spawn_texto": null,
+      "dificuldade": 4,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": "Cidade sobreposta a uma vila; início muito perigoso.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [],
+      "estruturas": [
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": 0,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": 19,
+          "coord_z": -7
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "codigo": "8513480846194603528",
+      "nome": "Duas cidades antigas",
+      "edicao_versao_id": 10,
+      "edicao": "Java",
+      "versao": "1.21.5",
+      "versao_min_num": 1021005,
+      "versao_max_num": 1021005,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [],
+      "estruturas": [
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "codigo": "-8539506224916838806",
+      "nome": "Trilha e provação",
+      "edicao_versao_id": 1,
+      "edicao": "Ambas",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Beebom cita Java e Bedrock; Twinfinite rotula Java. Spawn em Snowy Plains.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "planicies",
+          "nome": "Planícies"
+        },
+        {
+          "slug": "taiga_nevada",
+          "nome": "Taiga nevada"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": -328,
+          "coord_z": 8
+        },
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": -1048,
+          "coord_z": 600
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "codigo": "4012088974005424937",
+      "nome": "Câmara ao lado de cidade antiga",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "desertos",
+          "nome": "Desertos"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": 340,
+          "coord_z": 820
+        },
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": 480,
+          "coord_z": 820
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "codigo": "-5592633653095784779",
+      "nome": "Ilha de cogumelo com câmaras embaixo",
+      "edicao_versao_id": 1,
+      "edicao": "Ambas",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": "Ilha em X 1961 Z 295, longe do spawn.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        },
+        {
+          "slug": "cogumelos",
+          "nome": "Campos de cogumelos"
+        },
+        {
+          "slug": "raros",
+          "nome": "Biomas raros"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": 1961,
+          "coord_z": 295
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "codigo": "144919489830835999",
+      "nome": "Quatro câmaras perto do spawn",
+      "edicao_versao_id": 1,
+      "edicao": "Ambas",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Spawn em Bamboo Jungle.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "selvas",
+          "nome": "Selvas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "codigo": "-7833842402223417925",
+      "nome": "Trilha em T até câmara",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": 345,
+          "coord_x": 7,
+          "coord_z": 345
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "codigo": "565535403532980236",
+      "nome": "Spawn em cidade antiga Bedrock",
+      "edicao_versao_id": 11,
+      "edicao": "Bedrock",
+      "versao": "1.20.6",
+      "versao_min_num": 1020006,
+      "versao_max_num": 1020006,
+      "spawn_texto": null,
+      "dificuldade": 4,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": "Versão anterior; reconfirmar na 1.21+.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [],
+      "estruturas": [
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": 0,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "codigo": "986324898918317848",
+      "nome": "Cidade antiga quase instantânea",
+      "edicao_versao_id": 11,
+      "edicao": "Bedrock",
+      "versao": "1.20.6",
+      "versao_min_num": 1020006,
+      "versao_max_num": 1020006,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Versão anterior.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [],
+      "estruturas": [
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "codigo": "-3659344165812520857",
+      "nome": "A ilha alta",
+      "edicao_versao_id": 12,
+      "edicao": "Java",
+      "versao": "1.20.4",
+      "versao_min_num": 1020004,
+      "versao_max_num": 1020004,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Versão anterior.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": []
+    },
+    {
+      "id": 36,
+      "codigo": "-8591900330462080048",
+      "nome": "Câmaras em ravina exposta",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [],
+      "estruturas": [
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "codigo": "-3556402759935773199",
+      "nome": "Ilha de provação II",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "codigo": "4358921489363102297",
+      "nome": "Mansão sobre vila em ilha de spawn",
+      "edicao_versao_id": 13,
+      "edicao": "Java",
+      "versao": "26.3",
+      "versao_min_num": 26003000,
+      "versao_max_num": 26003099,
+      "spawn_texto": null,
+      "dificuldade": 4,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "mansion",
+          "nome": "Woodland Mansion",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "codigo": "-4227634870293935746",
+      "nome": "Dappled forest triplo",
+      "edicao_versao_id": 13,
+      "edicao": "Java",
+      "versao": "26.3",
+      "versao_min_num": 26003000,
+      "versao_max_num": 26003099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "codigo": "-4719577674963485983",
+      "nome": "Dappled forest com cinco ferreiros",
+      "edicao_versao_id": 14,
+      "edicao": "Bedrock",
+      "versao": "26.51",
+      "versao_min_num": 26051000,
+      "versao_max_num": 26051099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Título cita 26.3 e Bedrock 26.51; tabela rotula Bedrock.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        }
+      ],
+      "estruturas": []
+    },
+    {
+      "id": 41,
+      "codigo": "4778319204640099844",
+      "nome": "Ilha de sobrevivência com penhasco alto",
+      "edicao_versao_id": 6,
+      "edicao": "Java",
+      "versao": "1.21.4",
+      "versao_min_num": 1021004,
+      "versao_max_num": 1021004,
+      "spawn_texto": null,
+      "dificuldade": 4,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": "Título menciona Java e Bedrock; página lista Java.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "codigo": "6943112984220218",
+      "nome": "Seed de sobrevivência elogiada",
+      "edicao_versao_id": 6,
+      "edicao": "Java",
+      "versao": "1.21.4",
+      "versao_min_num": 1021004,
+      "versao_max_num": 1021004,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [],
+      "estruturas": [
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "codigo": "1248286902574319040",
+      "nome": "Cidade antiga com baú de maçãs",
+      "edicao_versao_id": 13,
+      "edicao": "Java",
+      "versao": "26.3",
+      "versao_min_num": 26003000,
+      "versao_max_num": 26003099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Conteúdo do baú é afirmação da fonte.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [],
+      "estruturas": [
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "codigo": "6306952185402203104",
+      "nome": "Dappled forest, ice spikes e cidade",
+      "edicao_versao_id": 13,
+      "edicao": "Java",
+      "versao": "26.3",
+      "versao_min_num": 26003000,
+      "versao_max_num": 26003099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        },
+        {
+          "slug": "raros",
+          "nome": "Biomas raros"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "codigo": "-7470345881882915071",
+      "nome": "Pirâmide dentro de câmara",
+      "edicao_versao_id": 6,
+      "edicao": "Java",
+      "versao": "1.21.4",
+      "versao_min_num": 1021004,
+      "versao_max_num": 1021004,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "desertos",
+          "nome": "Desertos"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "desert_temple",
+          "nome": "Desert Temple",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "codigo": "2643542272131503067",
+      "nome": "Portal ruinoso no spawn, planície",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "portal no spawn",
+      "dificuldade": 2,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "planicies",
+          "nome": "Planícies"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": 0,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 160,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": 192,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "codigo": "8363883376303312479",
+      "nome": "Portal no spawn, taiga de pinheiros",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "portal no spawn",
+      "dificuldade": 2,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "taiga",
+          "nome": "Taiga"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": 0,
+          "coord_x": 0,
+          "coord_z": 0
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 80,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": 227,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "codigo": "-440472133329981616",
+      "nome": "Portal no spawn, planície II",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "portal no spawn",
+      "dificuldade": 2,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "planicies",
+          "nome": "Planícies"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": 0,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 107,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": 170,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "codigo": "-7022391147313087402",
+      "nome": "Triângulo apertado em planície nevada",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "portal no spawn",
+      "dificuldade": 2,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "planicies",
+          "nome": "Planícies"
+        },
+        {
+          "slug": "taiga_nevada",
+          "nome": "Taiga nevada"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": 0,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 71,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": 128,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "codigo": "8131646228639523493",
+      "nome": "Portal e vila sob 100 blocos",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "portal no spawn",
+      "dificuldade": 2,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": 0,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "ocean_ruins",
+          "nome": "Ocean Ruins",
+          "dist_spawn": 71,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 97,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "codigo": "-7111810036737204144",
+      "nome": "Portal no spawn, floresta",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "portal no spawn",
+      "dificuldade": 2,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": 0,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": 176,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 192,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "codigo": "3156037144607818502",
+      "nome": "Portal no spawn, floresta II",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "portal no spawn",
+      "dificuldade": 2,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": 0,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 158,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "ocean_ruins",
+          "nome": "Ocean Ruins",
+          "dist_spawn": 240,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "codigo": "9034078504",
+      "nome": "Vila no lago com portal flutuante",
+      "edicao_versao_id": 9,
+      "edicao": "Java",
+      "versao": "1.20-1.21.11",
+      "versao_min_num": 1020000,
+      "versao_max_num": 1021011,
+      "spawn_texto": "9,78,24",
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": "Fontes concordam em edição e faixa de versão; há queda de lava próxima.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "planicies",
+          "nome": "Planícies"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "codigo": "7311929229522424735",
+      "nome": "Speedrun em taiga",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "0,0",
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "taiga",
+          "nome": "Taiga"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": 51,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "codigo": "382008044140127510",
+      "nome": "Speedrun em planície",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "16,32",
+      "dificuldade": 2,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": "Quatro vilas em 700 blocos.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "planicies",
+          "nome": "Planícies"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 129,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "codigo": "3541336324715204874",
+      "nome": "Speedrun em meadow",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "0,0",
+      "dificuldade": 4,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "montanhas",
+          "nome": "Montanhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 210,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "codigo": "-5321749643246355024",
+      "nome": "Speedrun taiga com vila próxima",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "0,0",
+      "dificuldade": 2,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "taiga",
+          "nome": "Taiga"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 58,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "codigo": "643202569219444926",
+      "nome": "Picos serrilhados no spawn",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "0,48",
+      "dificuldade": 4,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": "Vila distante; cidade antiga a 96 blocos segundo o resumo da fonte.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "montanhas",
+          "nome": "Montanhas"
+        },
+        {
+          "slug": "picos_nevados",
+          "nome": "Picos nevados"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 580,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": 96,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "codigo": "-6897082504097952427",
+      "nome": "Várias montanhas gigantes",
+      "edicao_versao_id": 15,
+      "edicao": "Bedrock",
+      "versao": "1.20-1.21.11",
+      "versao_min_num": 1020000,
+      "versao_max_num": 1021011,
+      "spawn_texto": "0,160,0",
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "montanhas",
+          "nome": "Montanhas"
+        },
+        {
+          "slug": "picos_nevados",
+          "nome": "Picos nevados"
+        }
+      ],
+      "estruturas": []
+    },
+    {
+      "id": 60,
+      "codigo": "4489057056054590644",
+      "nome": "Montanha larga de picos",
+      "edicao_versao_id": 15,
+      "edicao": "Bedrock",
+      "versao": "1.20-1.21.11",
+      "versao_min_num": 1020000,
+      "versao_max_num": 1021011,
+      "spawn_texto": "0,158,0",
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Cadeia com cerca de 500 blocos.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "montanhas",
+          "nome": "Montanhas"
+        },
+        {
+          "slug": "picos_nevados",
+          "nome": "Picos nevados"
+        }
+      ],
+      "estruturas": []
+    },
+    {
+      "id": 61,
+      "codigo": "-788591392889958720",
+      "nome": "Colina plana enorme com lago",
+      "edicao_versao_id": 9,
+      "edicao": "Java",
+      "versao": "1.20-1.21.11",
+      "versao_min_num": 1020000,
+      "versao_max_num": 1021011,
+      "spawn_texto": "-2,83,-6",
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "alto",
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "planicies",
+          "nome": "Planícies"
+        },
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        },
+        {
+          "slug": "taiga",
+          "nome": "Taiga"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": -304,
+          "coord_z": -176
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": -432,
+          "coord_z": 16
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": -768,
+          "coord_z": 176
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": 687,
+          "coord_z": -144
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": 160,
+          "coord_z": -768
+        },
+        {
+          "slug": "stronghold",
+          "nome": "Stronghold",
+          "dist_spawn": null,
+          "coord_x": -444,
+          "coord_z": -1484
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "codigo": "1605713702489912095",
+      "nome": "Mansão em floresta de bétulas",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": 86,
+          "coord_x": 80,
+          "coord_z": 32
+        },
+        {
+          "slug": "mansion",
+          "nome": "Woodland Mansion",
+          "dist_spawn": 173,
+          "coord_x": 96,
+          "coord_z": 144
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": 253,
+          "coord_x": 80,
+          "coord_z": -240
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "codigo": "26274881544121",
+      "nome": "Caldeira com mansão e vila",
+      "edicao_versao_id": 9,
+      "edicao": "Java",
+      "versao": "1.20-1.21.11",
+      "versao_min_num": 1020000,
+      "versao_max_num": 1021011,
+      "spawn_texto": "17,102,9",
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "cherry_grove",
+          "nome": "Floresta de cerejeiras"
+        },
+        {
+          "slug": "montanhas",
+          "nome": "Montanhas"
+        },
+        {
+          "slug": "picos_nevados",
+          "nome": "Picos nevados"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "mansion",
+          "nome": "Woodland Mansion",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": -185,
+          "coord_z": 575
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": 152,
+          "coord_z": 112
+        },
+        {
+          "slug": "pillager_outpost",
+          "nome": "Pillager Outpost",
+          "dist_spawn": null,
+          "coord_x": -480,
+          "coord_z": -224
+        },
+        {
+          "slug": "ancient_city",
+          "nome": "Ancient City",
+          "dist_spawn": null,
+          "coord_x": 40,
+          "coord_z": 216
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "codigo": "8232298652205430997",
+      "nome": "Mansão arranha-céu",
+      "edicao_versao_id": 16,
+      "edicao": "Java",
+      "versao": "1.19-1.21.11",
+      "versao_min_num": 1019000,
+      "versao_max_num": 1021011,
+      "spawn_texto": "3,260,-6",
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Vilas a cerca de 1000 blocos ou mais.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "mansion",
+          "nome": "Woodland Mansion",
+          "dist_spawn": null,
+          "coord_x": -666,
+          "coord_z": 261
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": 1216,
+          "coord_z": -944
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "codigo": "15632432739",
+      "nome": "Ilha da mansão",
+      "edicao_versao_id": 9,
+      "edicao": "Java",
+      "versao": "1.20-1.21.11",
+      "versao_min_num": 1020000,
+      "versao_max_num": 1021011,
+      "spawn_texto": "324,80,-494",
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "montanhas",
+          "nome": "Montanhas"
+        },
+        {
+          "slug": "picos_nevados",
+          "nome": "Picos nevados"
+        },
+        {
+          "slug": "savanas",
+          "nome": "Savanas"
+        },
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "mansion",
+          "nome": "Woodland Mansion",
+          "dist_spawn": null,
+          "coord_x": 192,
+          "coord_z": 146
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "codigo": "1517427826679820078",
+      "nome": "Mansão perto do spawn com tesouro",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "mansion",
+          "nome": "Woodland Mansion",
+          "dist_spawn": null,
+          "coord_x": 200,
+          "coord_z": 150
+        },
+        {
+          "slug": "buried_treasure",
+          "nome": "Tesouro enterrado",
+          "dist_spawn": null,
+          "coord_x": 9,
+          "coord_z": 121
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "codigo": "2794202425749257137",
+      "nome": "Mansão imponente sobre vila",
+      "edicao_versao_id": 17,
+      "edicao": "Bedrock",
+      "versao": "1.21.130",
+      "versao_min_num": 1021130,
+      "versao_max_num": 1021130,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [],
+      "estruturas": [
+        {
+          "slug": "mansion",
+          "nome": "Woodland Mansion",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "codigo": "-2924912394841125808",
+      "nome": "Mansão com borda de selva rara",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Fonte cita Modified Jungle Edge.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "selvas",
+          "nome": "Selvas"
+        },
+        {
+          "slug": "raros",
+          "nome": "Biomas raros"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "mansion",
+          "nome": "Woodland Mansion",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "codigo": "1613434103",
+      "nome": "Mansão com tudo",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [],
+      "estruturas": [
+        {
+          "slug": "mansion",
+          "nome": "Woodland Mansion",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "pillager_outpost",
+          "nome": "Pillager Outpost",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "codigo": "-24970",
+      "nome": "Mansões duplas",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Fonte diz 'perto do spawn' mas as coordenadas passam de 500 blocos.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [],
+      "estruturas": [
+        {
+          "slug": "mansion",
+          "nome": "Woodland Mansion",
+          "dist_spawn": null,
+          "coord_x": 500,
+          "coord_z": 540
+        },
+        {
+          "slug": "mansion",
+          "nome": "Woodland Mansion",
+          "dist_spawn": null,
+          "coord_x": 1500,
+          "coord_z": 670
+        },
+        {
+          "slug": "jungle_temple",
+          "nome": "Jungle Temple",
+          "dist_spawn": null,
+          "coord_x": 695,
+          "coord_z": 40
+        },
+        {
+          "slug": "mineshaft",
+          "nome": "Mineshaft",
+          "dist_spawn": null,
+          "coord_x": 700,
+          "coord_z": 200
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "codigo": "165605352",
+      "nome": "Spawn no telhado da mansão",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": 4,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [],
+      "estruturas": [
+        {
+          "slug": "mansion",
+          "nome": "Woodland Mansion",
+          "dist_spawn": 0,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "codigo": "8160717602774178302",
+      "nome": "Deserto com pirâmide",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "0,16",
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "desertos",
+          "nome": "Desertos"
+        },
+        {
+          "slug": "badlands",
+          "nome": "Badlands"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "desert_temple",
+          "nome": "Desert Temple",
+          "dist_spawn": 97,
+          "coord_x": 96,
+          "coord_z": 0
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": 193,
+          "coord_x": 176,
+          "coord_z": 96
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "codigo": "2482490754905255652",
+      "nome": "Templo em badlands",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Poço do deserto em 328,-472.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "desertos",
+          "nome": "Desertos"
+        },
+        {
+          "slug": "selvas",
+          "nome": "Selvas"
+        },
+        {
+          "slug": "badlands",
+          "nome": "Badlands"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "desert_temple",
+          "nome": "Desert Temple",
+          "dist_spawn": null,
+          "coord_x": 344,
+          "coord_z": -456
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "codigo": "47634270473",
+      "nome": "Vila zumbi com templo no spawn",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "spawn",
+      "dificuldade": 2,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "desertos",
+          "nome": "Desertos"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": 0,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "desert_temple",
+          "nome": "Desert Temple",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "codigo": "47179726794",
+      "nome": "Vila ao lado de templo do deserto",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "desertos",
+          "nome": "Desertos"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "desert_temple",
+          "nome": "Desert Temple",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "codigo": "41649",
+      "nome": "Floresta ao lado de templo",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        },
+        {
+          "slug": "desertos",
+          "nome": "Desertos"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "desert_temple",
+          "nome": "Desert Temple",
+          "dist_spawn": null,
+          "coord_x": 120,
+          "coord_z": 88
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "codigo": "-6098732345511496012",
+      "nome": "Caverna lush em badlands",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "badlands",
+          "nome": "Badlands"
+        }
+      ],
+      "estruturas": []
+    },
+    {
+      "id": 78,
+      "codigo": "8651751508037126301",
+      "nome": "Enseada de coral com vila no deserto",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "desertos",
+          "nome": "Desertos"
+        },
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "pillager_outpost",
+          "nome": "Pillager Outpost",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "codigo": "4867719531267003880",
+      "nome": "Ilha de selva com templo",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": 4,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": "Templo semi afundado só relatado no Bedrock; no Java o terreno é igual mas estruturas podem mudar.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "selvas",
+          "nome": "Selvas"
+        },
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "jungle_temple",
+          "nome": "Jungle Temple",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "codigo": "3903589",
+      "nome": "Spawn em selva, ilha de cogumelo ao sul",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": "No Bedrock o spawn e a ilha ficam em outro lugar (registro próprio).",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "selvas",
+          "nome": "Selvas"
+        },
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        },
+        {
+          "slug": "cogumelos",
+          "nome": "Campos de cogumelos"
+        },
+        {
+          "slug": "raros",
+          "nome": "Biomas raros"
+        }
+      ],
+      "estruturas": []
+    },
+    {
+      "id": 81,
+      "codigo": "3903589",
+      "nome": "Selva com papagaios, ilha de cogumelo ao sul",
+      "edicao_versao_id": 18,
+      "edicao": "Bedrock",
+      "versao": "1.21.0",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021000,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "selvas",
+          "nome": "Selvas"
+        },
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        },
+        {
+          "slug": "cogumelos",
+          "nome": "Campos de cogumelos"
+        },
+        {
+          "slug": "raros",
+          "nome": "Biomas raros"
+        }
+      ],
+      "estruturas": []
+    },
+    {
+      "id": 82,
+      "codigo": "-6769744659830011552",
+      "nome": "Ilha de cogumelo em oceano congelado",
+      "edicao_versao_id": 1,
+      "edicao": "Ambas",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": "Ilha perto de -60,-219.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        },
+        {
+          "slug": "cogumelos",
+          "nome": "Campos de cogumelos"
+        },
+        {
+          "slug": "raros",
+          "nome": "Biomas raros"
+        }
+      ],
+      "estruturas": []
+    },
+    {
+      "id": 83,
+      "codigo": "2842901415727422438",
+      "nome": "Ilha de cogumelo longa",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": "Ilha perto de -537,327.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        },
+        {
+          "slug": "cogumelos",
+          "nome": "Campos de cogumelos"
+        },
+        {
+          "slug": "raros",
+          "nome": "Biomas raros"
+        }
+      ],
+      "estruturas": []
+    },
+    {
+      "id": 84,
+      "codigo": "-8936702305531883130",
+      "nome": "Ilha de cogumelo em oceano frio",
+      "edicao_versao_id": 1,
+      "edicao": "Ambas",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": "Ilha perto de -186,-122.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        },
+        {
+          "slug": "cogumelos",
+          "nome": "Campos de cogumelos"
+        },
+        {
+          "slug": "raros",
+          "nome": "Biomas raros"
+        }
+      ],
+      "estruturas": []
+    },
+    {
+      "id": 85,
+      "codigo": "-1348008547075949990",
+      "nome": "Quatro ilhas de cogumelo",
+      "edicao_versao_id": 8,
+      "edicao": "Bedrock",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        },
+        {
+          "slug": "cogumelos",
+          "nome": "Campos de cogumelos"
+        },
+        {
+          "slug": "raros",
+          "nome": "Biomas raros"
+        }
+      ],
+      "estruturas": []
+    },
+    {
+      "id": 86,
+      "codigo": "5374691412471917055",
+      "nome": "Ilha de cogumelo com ravina",
+      "edicao_versao_id": 1,
+      "edicao": "Ambas",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        },
+        {
+          "slug": "cogumelos",
+          "nome": "Campos de cogumelos"
+        },
+        {
+          "slug": "raros",
+          "nome": "Biomas raros"
+        }
+      ],
+      "estruturas": []
+    },
+    {
+      "id": 87,
+      "codigo": "-608830374621340378",
+      "nome": "Ilha de sobrevivência em taiga",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": 4,
+      "dificuldade_base": "estimada",
+      "multiplayer": null,
+      "nota": "Fonte descreve isolamento total e madeira limitada.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "taiga",
+          "nome": "Taiga"
+        },
+        {
+          "slug": "oceanos_ilhas",
+          "nome": "Oceanos e ilhas"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "codigo": "7545373633457494908",
+      "nome": "Planície ampla para construir",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": "0,0",
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": "medio",
+      "nota": "Fonte afirma cerca de 82% de terreno plano em 250 blocos.",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "planicies",
+          "nome": "Planícies"
+        },
+        {
+          "slug": "florestas",
+          "nome": "Florestas"
+        },
+        {
+          "slug": "taiga",
+          "nome": "Taiga"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": 205,
+          "coord_x": 128,
+          "coord_z": 160
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "codigo": "-3645586091663890742",
+      "nome": "Vila e portal sobre câmaras",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": null,
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [
+        {
+          "slug": "planicies",
+          "nome": "Planícies"
+        }
+      ],
+      "estruturas": [
+        {
+          "slug": "village",
+          "nome": "Vila",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "ruined_portal",
+          "nome": "Ruined Portal",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        },
+        {
+          "slug": "trial_chambers",
+          "nome": "Trial Chambers",
+          "dist_spawn": null,
+          "coord_x": null,
+          "coord_z": null
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "codigo": "4517475607999363428",
+      "nome": "Nether fácil",
+      "edicao_versao_id": 4,
+      "edicao": "Java",
+      "versao": "1.21",
+      "versao_min_num": 1021000,
+      "versao_max_num": 1021099,
+      "spawn_texto": null,
+      "dificuldade": null,
+      "dificuldade_base": null,
+      "multiplayer": null,
+      "nota": "Coordenadas de fortaleza e bastião como dadas pela fonte (x,z).",
+      "atualizado_em": "2026-11-08",
+      "verificacao": "documentada",
+      "biomas": [],
+      "estruturas": [
+        {
+          "slug": "fortress",
+          "nome": "Nether Fortress",
+          "dist_spawn": null,
+          "coord_x": 13,
+          "coord_z": 27
+        },
+        {
+          "slug": "bastion",
+          "nome": "Bastion",
+          "dist_spawn": null,
+          "coord_x": 25,
+          "coord_z": -119
+        }
+      ]
+    }
+  ]
+}
