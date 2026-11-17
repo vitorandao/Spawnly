@@ -105,7 +105,7 @@ async function handler(req,res) {
   if(route==='status'&&method==='GET'){
    const {state}=await read();
    return res.status(200).json({status:'ok',banco:'conectado',aplicacao:'Spawnly',
-     armazenamento:'Vercel Blob privado',revision:state.revision});
+     armazenamento:'Render PostgreSQL 17',revision:state.revision});
   }
   if(route==='catalogos'&&method==='GET'){
    const {seeds,...catalogos}=source; return res.status(200).json(catalogos);
