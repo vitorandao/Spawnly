@@ -1,12 +1,12 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": "bash native/build.sh",
+  "buildCommand": "bash native/build.sh && mkdir -p dist && cp -R *.html *.jpg css js mapa biomas assets dist/",
   "functions": {
     "api/mapa.js": {
       "includeFiles": "native/gerar_mapa",
       "maxDuration": 20
     }
   },
-  "outputDirectory": "."
+  "outputDirectory": "dist"
 }
