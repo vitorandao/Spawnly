@@ -519,7 +519,7 @@ npm start</code></pre>
 <img src="assets/vida-xp.svg" alt="Barra de vida e de experiência decorativas" width="700">
 
 
-<img src="https://img.shields.io/badge/SPAWNLY-PROJETO_ACAD%C3%8AMICO_DE_CRUD-152820?style=for-the-badge&labelColor=4ca66a" alt="Spawnly, projeto acadêmico de CRUD"><br><br>
+<img src="https://img.shields.io/badge/SPAWNLY-PROJETO_ACAD%C3%8AMICO_DE_CRUD-152820?style=for-the-badge&labelColor=4ca66a" alt="Spawnly"><br><br>
 
 Centro Universitário do Distrito Federal (UDF)<br><br>
 
