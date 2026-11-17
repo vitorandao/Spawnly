@@ -13,7 +13,7 @@
 <body>
 <header class="topo">
   <a class="marca" href="index.html">Spawnly</a>
-  <nav aria-label="Principal"><a href="index.html" aria-current="page">Inicio</a><a href="mapa/mapa.html">Mapa</a></nav>
+  <nav aria-label="Principal"><a href="index.html" aria-current="page">Inicio</a><a href="questionario.html">Questionario</a><a href="resultados.html">Recomendacoes</a><a href="gerenciar.html">Gerenciar seeds</a><a href="mapa/mapa.html">Mapa</a></nav>
 </header>
 <main>
   <section class="hero">
@@ -28,6 +28,7 @@
     <p class="etiqueta">QUESTIONARIO DE PREFERENCIAS</p>
     <h2 id="titulo-questionario">Monte seu mundo ideal</h2>
     <form id="form-questionario" class="bloco">
+      <div><label for="nome">Nome do jogador</label><input id="nome" name="nome" maxlength="80" placeholder="Digite seu nome" autocomplete="nickname" required></div>
       <fieldset><legend>Edicao e versao</legend><div class="campos">
         <div><label for="edicao">Edicao</label><select id="edicao" required><option>Java</option><option>Bedrock</option></select></div>
         <div><label for="versao">Versao instalada</label><input id="versao" list="lista-versoes" maxlength="12" value="1.21" pattern="[0-9]{1,2}\.[0-9]{1,3}(\.[0-9]{1,3})?" required><datalist id="lista-versoes"></datalist></div>
@@ -148,7 +149,7 @@
         </div>
       </fieldset>
       <p id="mensagem" class="mensagem" role="alert"></p>
-      <a class="btn" href="mapa/mapa.html">Criar seed</a>
+      <button class="btn" type="submit">Buscar recomendacoes</button> <a class="btn sec" href="mapa/mapa.html">Mapa de seeds</a>
     </form>
   </section>
 
