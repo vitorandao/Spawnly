@@ -10,7 +10,8 @@ services:
     branch: feature/spawnly-render-postgres-integration-20261117
     buildCommand: cd render-bridge && npm install --omit=dev
     startCommand: node render-bridge/server.js
-    healthCheckPath: /health
+    # Verificacao TCP temporaria durante a inicializacao do catalogo SQL.
+    # /health continua disponivel para verificacao explicita PostgreSQL.
     envVars:
       - key: NODE_ENV
         value: production
