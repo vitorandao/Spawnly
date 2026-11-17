@@ -11,7 +11,7 @@ const DDL = [
 'CREATE TABLE IF NOT EXISTS spawnly_preferences (usuario_id integer primary key references spawnly_users(id) on delete cascade, biomas text[] not null, estruturas text[] not null, estilos text[] not null, pesos jsonb not null)',
 'CREATE TABLE IF NOT EXISTS spawnly_seeds (id integer primary key, codigo text not null, nome text not null, edicao_versao_id integer not null, edicao text not null, versao text not null, versao_min_num bigint not null, versao_max_num bigint not null, spawn_texto text, dificuldade integer, dificuldade_base integer, multiplayer text, nota text, atualizado_em text, verificacao text, unique(codigo,edicao_versao_id))',
 'CREATE TABLE IF NOT EXISTS spawnly_seed_biomas (seed_id integer not null references spawnly_seeds(id) on delete cascade, slug text not null, nome text, primary key(seed_id,slug))',
-'CREATE TABLE IF NOT EXISTS spawnly_seed_estruturas (seed_id integer not null references spawnly_seeds(id) on delete cascade, slug text not null, nome text, dist_spawn integer, coord_x integer, coord_z integer, primary key(seed_id,slug))',
+'CREATE TABLE IF NOT EXISTS spawnly_seed_estruturas (id bigint generated always as identity primary key, seed_id integer not null references spawnly_seeds(id) on delete cascade, slug text not null, nome text, dist_spawn integer, coord_x integer, coord_z integer)',
 'CREATE TABLE IF NOT EXISTS spawnly_request_nonce (nonce text primary key, created_at timestamptz not null default now())'
 ];
 async function insertSeed(c,seed) {
@@ -51,7 +51,7 @@ async function load(c){
   c.query('SELECT * FROM spawnly_preferences ORDER BY usuario_id'),
   c.query('SELECT * FROM spawnly_seeds ORDER BY id'),
   c.query('SELECT * FROM spawnly_seed_biomas ORDER BY seed_id,slug'),
-  c.query('SELECT * FROM spawnly_seed_estruturas ORDER BY seed_id,slug')
+  c.query('SELECT * FROM spawnly_seed_estruturas ORDER BY seed_id,id')
  ]);
  const prefs={};
  for(const row of p.rows)prefs[row.usuario_id]={id:row.usuario_id,usuario_id:row.usuario_id,biomas:row.biomas,estruturas:row.estruturas,estilos:row.estilos,pesos:row.pesos};
