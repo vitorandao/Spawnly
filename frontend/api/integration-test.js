@@ -12,6 +12,23 @@ module.exports=async function handler(req,res){
  res.setHeader('Cache-Control','no-store');
  if(process.env.VERCEL_ENV!=='preview')return res.status(404).json({erro:'Indisponivel'});
  if(req.method!=='GET')return res.status(405).json({erro:'Metodo nao permitido.'});
+ if(req.query?.cleanup==='1'){
+   try{
+     const {read,transact}=require('./_store');
+     const before=(await read()).state;
+     const ids=new Set(before.usuarios.filter(x=>x.nome?.startsWith('Teste Integracao ')).map(x=>x.id));
+     const old=before.seeds||[];
+     const count=old.filter(x=>/^(Seed de teste |Seed atualizada )/.test(x.nome||'')).length;
+     await transact(s=>{
+       s.usuarios=s.usuarios.filter(x=>!ids.has(x.id));
+       for(const id of ids)delete s.preferencias[id];
+       if(s.seeds)s.seeds=s.seeds.filter(x=>!/^(Seed de teste |Seed atualizada )/.test(x.nome||''));
+       return null;
+     });
+     const after=(await read()).state;
+     return res.status(200).json({status:'limpo',usuariosRemovidos:ids.size,seedsRemovidas:count,restantes:{usuarios:after.usuarios.length,seeds:after.seeds?.length??90}});
+   }catch(e){return res.status(500).json({status:'erro_limpeza',erro:String(e.message).slice(0,300)});}
+ }
  const checks=[],tokenHeaders={},adminHeaders={'x-spawnly-admin-key':process.env.SPAWNLY_ADMIN_KEY};
  let uid=null,sid=null;
  try{
