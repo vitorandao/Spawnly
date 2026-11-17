@@ -7,7 +7,7 @@ module.exports=async function handler(req,res){
   return res.status(404).json({erro:'Nao encontrado'});
  try{
   const {state}=await read();
-  const r=await bridge({method:'POST',path:'/internal/import',body:state,scope:'import'});
+  const r=await bridge({method:'POST',path:'/internal/import',body:state,scope:'import',oidcToken:String(req.headers['x-vercel-oidc-token']||'')});
   return res.status(r.status).json(r.data);
  }catch(e){
   console.error('Migration:',e.message?.slice(0,180));
