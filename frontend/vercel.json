@@ -2,11 +2,52 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "buildCommand": "bash native/build.sh && mkdir -p dist && cp -R *.html *.jpg css js mapa biomas assets dist/",
+  "outputDirectory": "dist",
   "functions": {
     "api/mapa.js": {
       "includeFiles": "native/gerar_mapa",
       "maxDuration": 20
+    },
+    "api/backend.js": {
+      "maxDuration": 20
     }
   },
-  "outputDirectory": "dist"
+  "rewrites": [
+    {
+      "source": "/api/status",
+      "destination": "/api/backend?route=status"
+    },
+    {
+      "source": "/api/usuarios",
+      "destination": "/api/backend?route=usuarios"
+    },
+    {
+      "source": "/api/usuarios/:id",
+      "destination": "/api/backend?route=usuarios&id=:id"
+    },
+    {
+      "source": "/api/seeds",
+      "destination": "/api/backend?route=seeds"
+    },
+    {
+      "source": "/api/seeds/:id",
+      "destination": "/api/backend?route=seeds&id=:id"
+    },
+    {
+      "source": "/api/preferencias",
+      "destination": "/api/backend?route=preferencias"
+    },
+    {
+      "source": "/api/preferencias/:id",
+      "destination": "/api/backend?route=preferencias&id=:id"
+    },
+    {
+      "source": "/api/recomendar",
+      "destination": "/api/backend?route=recomendar"
+    },
+    {
+      "source": "/api/catalogos",
+      "destination": "/api/backend?route=catalogos"
+    }
+  ]
 }
