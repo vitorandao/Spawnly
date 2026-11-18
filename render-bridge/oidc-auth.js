@@ -12,7 +12,8 @@ const TRUSTED_PROJECTS = Object.freeze([
   Object.freeze({
     team: 'vitorandao',
     ownerId: 'team_aOArF2pAnPEcBjqgYFKgmk4f',
-    project: 'spawnly'
+    project: 'spawnly',
+    projectId: 'prj_xGVijzVhjuVXhOFhInAEuh2S4rB6'
   })
 ]);
 
