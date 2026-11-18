@@ -1,5 +1,3 @@
-<img src="assets/banner.svg" alt="Banner do Spawnly: paisagem em pixel art com mascote" width="100%">
-
 <div align="center">
 
 <img src="assets/logo.png" alt="Spawnly, encontre seu mundo perfeito" width="560">
