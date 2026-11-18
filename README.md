@@ -2,17 +2,21 @@
 
 <div align="center">
 
-<img src="assets/logo.svg" alt="Spawnly" width="460">
+<img src="assets/logo.png" alt="Spawnly, encontre seu mundo perfeito" width="560">
 
-<img src="https://img.shields.io/badge/PROJETO_ACAD%C3%8AMICO-CRUD-4ca66a?style=for-the-badge&labelColor=152820" alt="Projeto acadêmico CRUD">
+<br>
 
-<h1>SPAWNLY</h1>
+<img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=14&duration=3200&pause=900&color=69C57E&center=true&vCenter=true&width=860&height=50&lines=Encontre+seu+mundo+perfeito;Responda+o+question%C3%A1rio+de+prefer%C3%AAncias;Receba+seeds+ordenadas+por+compatibilidade;Explore+o+mapa+de+biomas+da+seed;Site+no+ar+na+Vercel+%E2%9B%8F%EF%B8%8F" alt="Frases animadas: Encontre seu mundo perfeito, questionário, recomendações, mapa de biomas, site no ar">
 
-<h3>Encontre seu mundo perfeito.</h3>
+<br>
+
+<a href="https://spawnly-ten.vercel.app"><img src="https://img.shields.io/badge/JOGAR_AGORA-spawnly--ten.vercel.app-4ca66a?style=for-the-badge&logo=vercel&logoColor=white&labelColor=152820" alt="Abrir o Spawnly no ar"></a>
+<img src="https://img.shields.io/badge/STATUS-NO_AR-69c57e?style=for-the-badge&labelColor=152820" alt="Status: no ar">
+<img src="https://img.shields.io/badge/PROJETO_ACAD%C3%8AMICO-CRUD-f5c969?style=for-the-badge&labelColor=152820" alt="Projeto acadêmico CRUD">
 
 <p>
-Site de sugestões de seeds para Minecraft com questionário de preferências<br>
-e recomendações personalizadas, construído como projeto acadêmico de CRUD.
+Site de sugestões de seeds para Minecraft com questionário de preferências,<br>
+recomendações por compatibilidade e <b>mapa de biomas</b>, publicado na <b>Vercel</b>.
 </p>
 
 <p>
@@ -20,8 +24,10 @@ e recomendações personalizadas, construído como projeto acadêmico de CRUD.
 <img src="https://img.shields.io/badge/CSS3-f5c969?style=for-the-badge&logo=css3&logoColor=152820" alt="CSS3">
 <img src="https://img.shields.io/badge/JavaScript-214032?style=for-the-badge&logo=javascript&logoColor=f5c969" alt="JavaScript">
 <img src="https://img.shields.io/badge/Node.js-4ca66a?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
-<img src="https://img.shields.io/badge/Express-214032?style=for-the-badge&logo=express&logoColor=f5c969" alt="Express">
-<img src="https://img.shields.io/badge/MySQL-f5c969?style=for-the-badge&logo=mysql&logoColor=152820" alt="MySQL">
+<img src="https://img.shields.io/badge/PostgreSQL-f5c969?style=for-the-badge&logo=postgresql&logoColor=152820" alt="PostgreSQL">
+<img src="https://img.shields.io/badge/Vercel-214032?style=for-the-badge&logo=vercel&logoColor=f5c969" alt="Vercel">
+<img src="https://img.shields.io/badge/Render-4ca66a?style=for-the-badge&logo=render&logoColor=white" alt="Render">
+<img src="https://img.shields.io/badge/C-f5c969?style=for-the-badge&logo=c&logoColor=152820" alt="C (Cubiomes)">
 </p>
 
 </div>
@@ -35,15 +41,15 @@ e recomendações personalizadas, construído como projeto acadêmico de CRUD.
 <table>
 <tr>
 <td align="center" width="25%"><a href="#sobre-o-mundo"><b>Sobre o Mundo</b></a></td>
+<td align="center" width="25%"><a href="#novidades"><b>Novidades</b></a></td>
 <td align="center" width="25%"><a href="#jornada-do-jogador"><b>Jornada do Jogador</b></a></td>
 <td align="center" width="25%"><a href="#crafting-table-tecnologias"><b>Crafting Table</b></a></td>
-<td align="center" width="25%"><a href="#mapa-de-chunks-arquitetura"><b>Mapa de Chunks</b></a></td>
 </tr>
 <tr>
+<td align="center"><a href="#mapa-de-chunks-arquitetura"><b>Mapa de Chunks</b></a></td>
 <td align="center"><a href="#inventario-banco-de-dados"><b>Inventário</b></a></td>
 <td align="center"><a href="#comandos-rotas-da-api"><b>Comandos</b></a></td>
 <td align="center"><a href="#iniciando-o-servidor"><b>Iniciando o Servidor</b></a></td>
-<td align="center"><a href="#party-equipe"><b>Party</b></a></td>
 </tr>
 </table>
 
@@ -120,7 +126,64 @@ O <b>Spawnly</b> recomenda seeds de Minecraft que combinam com o seu estilo de j
 </table>
 
 <blockquote>
-<b>Limite de escopo:</b> o site recomenda apenas seeds já registradas no MySQL. Isso mantém o trabalho realizável e as recomendações confiáveis.
+<b>Limite de escopo:</b> o site recomenda apenas seeds já registradas no banco de dados. Isso mantém o trabalho realizável e as recomendações confiáveis.
+</blockquote>
+
+<img src="assets/divider.svg" alt="" width="100%">
+
+<h2 id="novidades">
+<img src="https://img.shields.io/badge/NOVO-NOVIDADES_DO_SPAWNLY-152820?style=for-the-badge&labelColor=f5c969" alt="Novidades do Spawnly">
+</h2>
+
+<blockquote>
+<b>Advancement Made!</b> O Spawnly saiu do localhost e está no ar: <a href="https://spawnly-ten.vercel.app"><b>spawnly-ten.vercel.app</b></a>
+</blockquote>
+
+<table>
+<tr>
+<th align="center" width="14%">Recurso</th>
+<th align="left">O que mudou</th>
+</tr>
+<tr>
+<td align="center"><img src="https://img.shields.io/badge/NO_AR-69c57e?style=flat-square" alt="No ar"></td>
+<td><b>Site publicado na Vercel</b>: front-end estático e API serverless na mesma hospedagem.</td>
+</tr>
+<tr>
+<td align="center"><img src="https://img.shields.io/badge/MAPA-4ca66a?style=flat-square" alt="Mapa"></td>
+<td><b>Mapa de biomas</b> (<code>/mapa/mapa.html</code>): informe uma seed numérica, a versão do Java e as coordenadas X/Z. O servidor gera os biomas com a biblioteca <a href="https://github.com/xpple/cubiomes">Cubiomes</a> (C, MIT) e o navegador pinta tudo em <code>&lt;canvas&gt;</code>. Suporta Java 1.20.6, 1.21.1, 1.21.4 e 1.21.11, e a URL guarda os parâmetros para compartilhar o mapa.</td>
+</tr>
+<tr>
+<td align="center"><img src="https://img.shields.io/badge/BANCO-f5c969?style=flat-square" alt="Banco"></td>
+<td><b>PostgreSQL relacional</b> no Render, com tabelas, chaves estrangeiras, transações e importação segura do catálogo. Uma API privada no Render conversa com a Vercel.</td>
+</tr>
+<tr>
+<td align="center"><img src="https://img.shields.io/badge/SEGURAN%C3%87A-214032?style=flat-square" alt="Segurança"></td>
+<td>Chamadas Vercel para Render autenticadas por <b>OIDC nativo da Vercel</b> (sem chaves persistentes), <b>token por usuário</b> nas rotas do jogador e <b>chave administrativa</b> para cadastrar, editar e excluir seeds.</td>
+</tr>
+<tr>
+<td align="center"><img src="https://img.shields.io/badge/CAT%C3%81LOGO-4ca66a?style=flat-square" alt="Catálogo"></td>
+<td><b>Catálogo real importado</b>: 90 seeds com biomas, estruturas, estilos de jogo e faixas de versão, mais um questionário com <b>54 biomas do Overworld</b> e <b>5 do Nether</b>, cada um com ícone próprio.</td>
+</tr>
+<tr>
+<td align="center"><img src="https://img.shields.io/badge/FLUXO-f5c969?style=flat-square" alt="Fluxo"></td>
+<td><b>Sessão de usuário</b> no navegador, páginas de <b>Recomendações</b> e <b>Gerenciar seeds</b> restauradas e integradas à API, e nova navegação: Início, Questionário, Recomendações, Gerenciar seeds e Mapa.</td>
+</tr>
+<tr>
+<td align="center"><img src="https://img.shields.io/badge/VISUAL-214032?style=flat-square" alt="Visual"></td>
+<td>Nova <b>logo</b> (<code>assets/logo.png</code> e <code>assets/icon.png</code>) e fonte pixelada <i>Press Start 2P</i> no site.</td>
+</tr>
+</table>
+
+<h3>Como o site no ar funciona</h3>
+
+<pre>
+ Navegador ──► Vercel (site estático + /api/*) ──OIDC──► Render (API) ──► PostgreSQL
+                    │
+                    └──► /api/mapa ──► gerar_mapa (C + Cubiomes) ──► biomas em Canvas
+</pre>
+
+<blockquote>
+<b>Observação:</b> o servidor Render usa plano gratuito e pode demorar alguns segundos para acordar na primeira requisição. O mapa só suporta <b>Minecraft Java</b>.
 </blockquote>
 
 <img src="assets/divider.svg" alt="" width="100%">
@@ -155,6 +218,11 @@ O <b>Spawnly</b> recomenda seeds de Minecraft que combinam com o seu estilo de j
 <td><b>Refinar preferências</b></td>
 <td>Alterar filtros sem repetir todo o processo.</td>
 </tr>
+<tr>
+<td align="center"><img src="https://img.shields.io/badge/-5-152820?style=for-the-badge" alt="5"></td>
+<td><b>Explorar o mapa</b></td>
+<td>Colar o código de uma seed e ver os biomas ao redor do spawn antes de abrir o jogo.</td>
+</tr>
 </table>
 
 <div align="center">
@@ -162,7 +230,7 @@ O <b>Spawnly</b> recomenda seeds de Minecraft que combinam com o seu estilo de j
 </div>
 
 <pre>
-Hotbar:  [ 1 Entrar ][ 2 Questionário ][ 3 Recomendações ][ 4 Refinar ]
+Hotbar:  [ 1 Entrar ][ 2 Questionário ][ 3 Recomendações ][ 4 Refinar ][ 5 Mapa ]
 </pre>
 
 <details>
@@ -177,7 +245,7 @@ Hotbar:  [ 1 Entrar ][ 2 Questionário ][ 3 Recomendações ][ 4 Refinar ]
 </tr>
 </table>
 
-<p>Os biomas reais ficam no banco de dados, na tabela <code>seeds</code>. Esta lista é só um exemplo!.</p>
+<p>O questionário completo tem <b>54 biomas do Overworld</b> e <b>5 do Nether</b>. Esta lista é só um exemplo.</p>
 
 </details>
 
@@ -189,9 +257,10 @@ Hotbar:  [ 1 Entrar ][ 2 Questionário ][ 3 Recomendações ][ 4 Refinar ]
 
 <table>
 <tr>
-<td align="center" width="33%"><img src="https://img.shields.io/badge/FRONT--END-4ca66a?style=for-the-badge" alt="Front-end"><br><br>HTML5<br>CSS3 responsivo<br>JavaScript</td>
-<td align="center" width="33%"><img src="https://img.shields.io/badge/BACK--END-f5c969?style=for-the-badge" alt="Back-end"><br><br>Node.js<br>Express<br>mysql2 e dotenv</td>
-<td align="center" width="33%"><img src="https://img.shields.io/badge/DADOS-214032?style=for-the-badge" alt="Dados"><br><br>MariaDB<br>Banco relacional<br>Script SQL/DDL</td>
+<td align="center" width="25%"><img src="https://img.shields.io/badge/FRONT--END-4ca66a?style=for-the-badge" alt="Front-end"><br><br>HTML5<br>CSS3 responsivo<br>JavaScript e Canvas</td>
+<td align="center" width="25%"><img src="https://img.shields.io/badge/BACK--END-f5c969?style=for-the-badge" alt="Back-end"><br><br>Node.js<br>Funções serverless (Vercel)<br>API no Render</td>
+<td align="center" width="25%"><img src="https://img.shields.io/badge/DADOS-214032?style=for-the-badge" alt="Dados"><br><br>PostgreSQL (produção)<br>MariaDB (local)<br>Script SQL/DDL</td>
+<td align="center" width="25%"><img src="https://img.shields.io/badge/MAPA-4ca66a?style=for-the-badge" alt="Mapa"><br><br>C + Cubiomes<br>GCC no build<br>Canvas 2D</td>
 </tr>
 </table>
 
@@ -201,10 +270,10 @@ Hotbar:  [ 1 Entrar ][ 2 Questionário ][ 3 Recomendações ][ 4 Refinar ]
   ┌───────┬───────┬───────┐
   │ HTML5 │ CSS3  │  JS   │
   ├───────┼───────┼───────┤       ┌─────────────┐
-  │ Node  │Express│ MySQL │ ───►  │  SPAWNLY x1 │
+  │ Node  │Vercel │Postgre│ ───►  │  SPAWNLY x1 │
   ├───────┼───────┼───────┤       └─────────────┘
-  │ mysql2│dotenv │  DDL  │
-  │       │       │       │
+  │Render │Cubiome│ OIDC  │
+  │       │   C   │       │
   └───────┴───────┴───────┘
 </pre>
 
@@ -216,40 +285,45 @@ Hotbar:  [ 1 Entrar ][ 2 Questionário ][ 3 Recomendações ][ 4 Refinar ]
 
 <pre>
  ┌──────────────────┐      ┌──────────────────┐      ┌──────────────────┐
- │    FRONT-END     │      │     BACK-END     │      │      DADOS       │
+ │    FRONT-END     │      │  API (Vercel)    │      │   API (Render)   │
  │                  │ ───► │                  │ ───► │                  │
- │ HTML5 + CSS3 + JS│ ◄─── │ Node.js + Express│ ◄─── │     MariaDB      │
+ │ HTML5 + CSS3 + JS│ ◄─── │ Funções serverless│ ◄─── │  Node.js + OIDC  │
  └──────────────────┘      └──────────────────┘      └──────────────────┘
-      Navegador                 API REST                  Banco de dados
+      Navegador                /api/* e /api/mapa             │
+                                    │                         ▼
+                                    ▼                  ┌─────────────┐
+                            ┌────────────────┐         │ PostgreSQL  │
+                            │ gerar_mapa (C) │         └─────────────┘
+                            │   Cubiomes     │
+                            └────────────────┘
 </pre>
+
+<p>O backend Express com MariaDB continua na pasta <code>backend/</code> e serve para rodar tudo localmente (veja <a href="#iniciando-o-servidor">Iniciando o Servidor</a>).</p>
 
 <details>
 <summary><b>Estrutura de pastas implementada</b></summary>
 
 <pre>
-Spawnly-Integracao/
+Spawnly/
 ├── README.md
-├── assets/
-├── database/
-│   ├── spawnly_mariadb.sql
-│   └── README.md
-├── backend/
-│   ├── config/db.js
-│   ├── routes/
-│   ├── services/
-│   ├── test/
-│   ├── package.json
+├── render.yaml              # API SQL no Render
+├── assets/                  # logo.png, icon.png, banner, divisores
+├── database/                # SQL do MariaDB (uso local)
+├── backend/                 # Express + MariaDB (uso local)
+│   ├── routes/ services/ scripts/ test/
 │   └── server.js
-└── frontend/
-    ├── index.html
-    ├── questionario.html
-    ├── resultados.html
-    ├── gerenciar.html
-    ├── css/
-    └── js/
+├── render-bridge/           # API privada: Node + PostgreSQL
+└── frontend/                # site publicado na Vercel
+    ├── index.html  questionario.html  resultados.html  gerenciar.html
+    ├── mapa/mapa.html
+    ├── api/                 # funções serverless (CRUD, recomendação, mapa)
+    ├── native/              # gerar_mapa.c + build.sh (Cubiomes)
+    ├── biomas/              # ícones dos biomas
+    ├── css/  js/
+    └── vercel.json
 </pre>
 
-<p>O Express serve diretamente os arquivos de <code>frontend/</code> e os assets compartilhados.</p>
+<p>Na Vercel, o diretório <code>frontend/</code> é publicado como site estático e <code>frontend/api/</code> vira as funções serverless.</p>
 
 </details>
 
@@ -292,6 +366,8 @@ Spawnly-Integracao/
  │    seeds     │   (catálogo independente, consultado pelas regras
  └──────────────┘    de recomendação)
 </pre>
+
+<p>No site no ar, esses dados vivem em <b>PostgreSQL</b> (Render), com tabelas auxiliares de <b>biomas</b>, <b>estruturas</b>, <b>estilos de jogo</b> e <b>versões</b> ligadas às seeds por chaves estrangeiras. O catálogo inicial tem <b>90 seeds</b>.</p>
 
 <blockquote>
 <b>Atenção:</b> o código da seed usa <code>BIGINT</code> no banco e é devolvido como texto pela API, evitando perda de precisão no JavaScript. Edição e faixa de versão são obrigatórias para impedir recomendações incompatíveis.
@@ -336,7 +412,25 @@ Spawnly-Integracao/
 </tr>
 </table>
 
-<p>As rotas de usuários e preferências seguem o mesmo padrão CRUD.</p>
+<table>
+<tr>
+<td align="center"><img src="https://img.shields.io/badge/GET-4ca66a?style=flat-square" alt="GET"></td>
+<td><code>/api/catalogos</code></td>
+<td>Biomas, estruturas, estilos e versões</td>
+</tr>
+<tr>
+<td align="center"><img src="https://img.shields.io/badge/GET-4ca66a?style=flat-square" alt="GET"></td>
+<td><code>/api/mapa?seed=&amp;versao=&amp;x=&amp;z=</code></td>
+<td>Gera a grade de biomas da seed (Java)</td>
+</tr>
+<tr>
+<td align="center"><img src="https://img.shields.io/badge/GET-4ca66a?style=flat-square" alt="GET"></td>
+<td><code>/api/status</code></td>
+<td>Verifica o servidor e o banco</td>
+</tr>
+</table>
+
+<p>As rotas de usuários (<code>/api/usuarios</code>) e preferências (<code>/api/preferencias</code>) seguem o mesmo padrão CRUD. Cadastrar, editar e excluir <b>seeds</b> exige a chave administrativa.</p>
 
 <h3>Console do servidor (exemplo)</h3>
 
@@ -359,6 +453,10 @@ A rota <code>/api/recomendar</code> compara <b>edição</b>, <b>versão</b>, <b>
 <img src="https://img.shields.io/badge/07-INICIANDO_O_SERVIDOR-152820?style=for-the-badge&labelColor=4ca66a" alt="07 Iniciando o Servidor">
 </h2>
 
+<blockquote>
+<b>Só quer jogar?</b> Não precisa instalar nada: acesse <a href="https://spawnly-ten.vercel.app"><b>spawnly-ten.vercel.app</b></a>. Os passos abaixo rodam a versão <b>local</b> (Express + MariaDB) para desenvolvimento.
+</blockquote>
+
 <h3>Requisitos</h3>
 
 <table>
@@ -373,7 +471,7 @@ A rota <code>/api/recomendar</code> compara <b>edição</b>, <b>versão</b>, <b>
 
 <sub>Conquista desbloqueada: <b>Primeiro Spawn</b></sub>
 
-<pre><code>cd ~/Spawnly-Integracao/backend</code></pre>
+<pre><code>cd ~/Spawnly/backend</code></pre>
 
 <h3>Passo 2: Instalar as dependências</h3>
 
@@ -442,6 +540,8 @@ npm start</code></pre>
 <tr><td align="center">[x]</td><td>SQL oficial adaptado e validado no MariaDB</td></tr>
 <tr><td align="center">[x]</td><td><code>README.md</code> com passos de instalação, configuração e execução</td></tr>
 <tr><td align="center">[x]</td><td>Questionário com recomendações reais e refinamento de preferências</td></tr>
+<tr><td align="center">[x]</td><td>Site publicado na Vercel com API e banco PostgreSQL em produção</td></tr>
+<tr><td align="center">[x]</td><td>Mapa de biomas por seed com Cubiomes</td></tr>
 </table>
 
 <blockquote>
@@ -495,9 +595,10 @@ npm start</code></pre>
 <td align="center"><img src="https://img.shields.io/badge/A_DEFINIR-214032?style=flat-square" alt="A definir"></td>
 <td>Função ainda não confirmada pelo grupo. Sugestões: testes de qualidade, documentação, curadoria de seeds e suporte ao front-end</td>
 </tr>
-   <td align="center"><b>Beatriz</b></td>
-<td align="center"><img src="https://img.shields.io/badge/_FRONT--END-214032?style=flat-square" alt="FRONT--END"></td>
-<td> Sugestões:Suporte ao front-end</td>
+<tr>
+<td align="center"><b>Beatriz</b></td>
+<td align="center"><img src="https://img.shields.io/badge/FRONT--END-214032?style=flat-square" alt="Front-end"></td>
+<td>Suporte ao front-end</td>
 </tr>
 </table>
 
@@ -519,7 +620,11 @@ npm start</code></pre>
 <img src="assets/vida-xp.svg" alt="Barra de vida e de experiência decorativas" width="700">
 
 
+<img src="assets/icon.png" alt="Ícone do Spawnly" width="110"><br><br>
+
 <img src="https://img.shields.io/badge/SPAWNLY-PROJETO_ACAD%C3%8AMICO_DE_CRUD-152820?style=for-the-badge&labelColor=4ca66a" alt="Spawnly"><br><br>
+
+<a href="https://spawnly-ten.vercel.app"><b>spawnly-ten.vercel.app</b></a><br><br>
 
 Centro Universitário do Distrito Federal (UDF)<br><br>
 
