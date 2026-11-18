@@ -4,33 +4,14 @@ const backend=require('./backend');
 const store=require('./store');
 const PORT=Number(process.env.PORT||10000);
 const MAX_BODY=400000;
-const TEAM='jucilenejcl692-progs-projects';
-const ISSUER='https://oidc.vercel.com/'+TEAM;
-const AUDIENCE='https://vercel.com/'+TEAM;
-const PROJECT='prj_AAQIVagjzkGau9jYbqSwANSuXbJ3';
-const OWNER='team_Ighklbfq2CPFxWhpnua7JM5m';
-let verifierPromise;
-function verifier(){
- if(!verifierPromise)verifierPromise=import('jose').then(jose=>({
-  jose, jwks:jose.createRemoteJWKSet(new URL(ISSUER+'/.well-known/jwks'))
- }));
- return verifierPromise;
-}
+const { verifyBearer } = require('./oidc-auth');
 function respond(res,status,data){
  if(res.writableEnded)return;
  res.writeHead(status,{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'});
  res.end(JSON.stringify(data));
 }
 async function authenticate(req){
- const auth=String(req.headers.authorization||'');
- if(!auth.startsWith('Bearer ')||auth.length>10000)throw new Error('Credencial ausente');
- const {jose,jwks}=await verifier();
- const {payload}=await jose.jwtVerify(auth.slice(7),jwks,{issuer:ISSUER,audience:AUDIENCE});
- if(payload.project_id!==PROJECT||payload.owner_id!==OWNER||
-  !['production','preview'].includes(payload.environment)||
-  payload.sub!==('owner:'+TEAM+':project:spawnly:environment:'+payload.environment))
-  throw new Error('Projeto nao autorizado');
- return payload.environment;
+ return verifyBearer(String(req.headers.authorization||''));
 }
 async function handle(req,res){
  const url=new URL(req.url,'http://localhost');
