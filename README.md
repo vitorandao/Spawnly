@@ -565,8 +565,6 @@ npm start</code></pre>
 <img src="https://img.shields.io/badge/09-PARTY-152820?style=for-the-badge&labelColor=4ca66a" alt="09 Party: Equipe">
 </h2>
 
-<img src="assets/residentes.svg" alt="Residentes do Spawnly: três mascotes em pixel art" width="100%">
-
 <table>
 <tr>
 <th align="center">Jogador</th>
