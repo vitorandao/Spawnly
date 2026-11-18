@@ -613,8 +613,6 @@ npm start</code></pre>
 
 <div align="center">
 
-<img src="assets/vida-xp.svg" alt="Barra de vida e de experiência decorativas" width="700">
-
 
 <img src="assets/icon.png" alt="Ícone do Spawnly" width="110"><br><br>
 
