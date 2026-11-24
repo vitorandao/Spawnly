@@ -8,7 +8,7 @@
 
 <br>
 
-<a href="https://spawnly-ten.vercel.app"><img src="https://img.shields.io/badge/JOGAR_AGORA-spawnly--ten.vercel.app-4ca66a?style=for-the-badge&logo=vercel&logoColor=white&labelColor=152820" alt="Abrir o Spawnly no ar"></a>
+<a href="https://spawnly-six.vercel.app"><img src="https://img.shields.io/badge/JOGAR_AGORA-spawnly--six.vercel.app-4ca66a?style=for-the-badge&logo=vercel&logoColor=white&labelColor=152820" alt="Abrir o Spawnly no ar"></a>
 <img src="https://img.shields.io/badge/STATUS-NO_AR-69c57e?style=for-the-badge&labelColor=152820" alt="Status: no ar">
 <img src="https://img.shields.io/badge/PROJETO_ACAD%C3%8AMICO-CRUD-f5c969?style=for-the-badge&labelColor=152820" alt="Projeto acadêmico CRUD">
 
@@ -134,7 +134,7 @@ O <b>Spawnly</b> recomenda seeds de Minecraft que combinam com o seu estilo de j
 </h2>
 
 <blockquote>
-<b>Advancement Made!</b> O Spawnly saiu do localhost e está no ar: <a href="https://spawnly-ten.vercel.app"><b>spawnly-ten.vercel.app</b></a>
+<b>Advancement Made!</b> O Spawnly saiu do localhost e está no ar: <a href="https://spawnly-six.vercel.app"><b>spawnly-six.vercel.app</b></a>
 </blockquote>
 
 <table>
@@ -152,7 +152,7 @@ O <b>Spawnly</b> recomenda seeds de Minecraft que combinam com o seu estilo de j
 </tr>
 <tr>
 <td align="center"><img src="https://img.shields.io/badge/BANCO-f5c969?style=flat-square" alt="Banco"></td>
-<td><b>PostgreSQL relacional</b> no Render, com tabelas, chaves estrangeiras, transações e importação segura do catálogo. Uma API privada no Render conversa com a Vercel.</td>
+<td><b>PostgreSQL relacional</b> no Render, com tabelas, chaves estrangeiras, transações e importação segura do catálogo. Uma API autenticada no Render conversa com a Vercel.</td>
 </tr>
 <tr>
 <td align="center"><img src="https://img.shields.io/badge/SEGURAN%C3%87A-214032?style=flat-square" alt="Segurança"></td>
@@ -160,7 +160,7 @@ O <b>Spawnly</b> recomenda seeds de Minecraft que combinam com o seu estilo de j
 </tr>
 <tr>
 <td align="center"><img src="https://img.shields.io/badge/CAT%C3%81LOGO-4ca66a?style=flat-square" alt="Catálogo"></td>
-<td><b>Catálogo real importado</b>: 90 seeds com biomas, estruturas, estilos de jogo e faixas de versão, mais um questionário com <b>54 biomas do Overworld</b> e <b>5 do Nether</b>, cada um com ícone próprio.</td>
+<td><b>Catálogo real importado</b>: 90 seeds com biomas, estruturas e faixas de versão. O questionário apresenta <b>64 opções de biomas</b> (54 do Overworld, 5 do Nether e 5 do End), agrupadas pela API em 17 categorias de recomendação.</td>
 </tr>
 <tr>
 <td align="center"><img src="https://img.shields.io/badge/FLUXO-f5c969?style=flat-square" alt="Fluxo"></td>
@@ -181,7 +181,7 @@ O <b>Spawnly</b> recomenda seeds de Minecraft que combinam com o seu estilo de j
 </pre>
 
 <blockquote>
-<b>Observação:</b> o servidor Render usa plano gratuito e pode demorar alguns segundos para acordar na primeira requisição. O mapa só suporta <b>Minecraft Java</b>.
+<b>Observação:</b> o servidor Render usa plano gratuito e pode demorar para acordar na primeira requisição. O mapa só suporta <b>Minecraft Java</b>. Para verificar a conexão com o banco em produção, consulte <a href="https://spawnly-six.vercel.app/api/status"><code>/api/status</code></a>.
 </blockquote>
 
 <img src="assets/divider.svg" alt="" width="100%">
@@ -199,7 +199,7 @@ O <b>Spawnly</b> recomenda seeds de Minecraft que combinam com o seu estilo de j
 <tr>
 <td align="center"><img src="https://img.shields.io/badge/-1-152820?style=for-the-badge" alt="1"></td>
 <td><b>Entrar ou cadastrar</b></td>
-<td>Informar nome de usuário. Autenticação completa é opcional.</td>
+<td>Informar nome de jogador, edição e versão. O cadastro gera um token de sessão no navegador; não há login tradicional por senha.</td>
 </tr>
 <tr>
 <td align="center"><img src="https://img.shields.io/badge/-2-152820?style=for-the-badge" alt="2"></td>
@@ -243,7 +243,7 @@ Hotbar:  [ 1 Entrar ][ 2 Questionário ][ 3 Recomendações ][ 4 Refinar ][ 5 Ma
 </tr>
 </table>
 
-<p>O questionário completo tem <b>54 biomas do Overworld</b> e <b>5 do Nether</b>. Esta lista é só um exemplo.</p>
+<p>O questionário completo apresenta 54 biomas do Overworld, 5 do Nether e 5 do End. A API normaliza as escolhas em 17 categorias; biomas sem correspondência específica entram em <code>raros</code>. Esta lista é só um exemplo.</p>
 
 </details>
 
@@ -310,7 +310,7 @@ Spawnly/
 ├── backend/                 # Express + MariaDB (uso local)
 │   ├── routes/ services/ scripts/ test/
 │   └── server.js
-├── render-bridge/           # API privada: Node + PostgreSQL
+├── render-bridge/           # API autenticada: Node + PostgreSQL
 └── frontend/                # site publicado na Vercel
     ├── index.html  questionario.html  resultados.html  gerenciar.html
     ├── mapa/mapa.html
@@ -365,10 +365,10 @@ Spawnly/
  └──────────────┘    de recomendação)
 </pre>
 
-<p>No site no ar, esses dados vivem em <b>PostgreSQL</b> (Render), com tabelas auxiliares de <b>biomas</b>, <b>estruturas</b>, <b>estilos de jogo</b> e <b>versões</b> ligadas às seeds por chaves estrangeiras. O catálogo inicial tem <b>90 seeds</b>.</p>
+<p>O modelo acima representa o ambiente local MariaDB. Em produção, o <b>PostgreSQL</b> do Render usa as tabelas <code>spawnly_users</code>, <code>spawnly_preferences</code>, <code>spawnly_seeds</code>, <code>spawnly_seed_biomas</code>, <code>spawnly_seed_estruturas</code>, <code>spawnly_meta</code> e <code>spawnly_request_nonce</code>, definidas em <code>render-bridge/store.js</code>. O catálogo de opções vem de <code>frontend/api/_catalogo-inicial.json</code>. O catálogo inicial tem <b>90 seeds</b>.</p>
 
 <blockquote>
-<b>Atenção:</b> o código da seed usa <code>BIGINT</code> no banco e é devolvido como texto pela API, evitando perda de precisão no JavaScript. Edição e faixa de versão são obrigatórias para impedir recomendações incompatíveis.
+<b>Atenção:</b> em produção, o código da seed é armazenado como <code>TEXT</code> no PostgreSQL e retornado como texto pela API, evitando perda de precisão no JavaScript. As seeds numéricas são validadas no intervalo de um inteiro de 64 bits. Edição e faixa de versão são obrigatórias para impedir recomendações incompatíveis.
 </blockquote>
 
 <img src="assets/divider.svg" alt="" width="100%">
@@ -428,7 +428,7 @@ Spawnly/
 </tr>
 </table>
 
-<p>As rotas de usuários (<code>/api/usuarios</code>) e preferências (<code>/api/preferencias</code>) seguem o mesmo padrão CRUD. Cadastrar, editar e excluir <b>seeds</b> exige a chave administrativa.</p>
+<p>As rotas de usuários (<code>/api/usuarios</code>) e preferências (<code>/api/preferencias</code>) seguem o padrão CRUD. Alterações dos dados de um jogador e recomendações exigem o token de sessão correspondente (<code>x-spawnly-user-token</code>); cadastrar, editar e excluir <b>seeds</b> exige a chave administrativa (<code>x-spawnly-admin-key</code>). As consultas GET de usuários e preferências não exigem token na implementação atual; não use informações pessoais sensíveis no cadastro.</p>
 
 <h3>Console do servidor (exemplo)</h3>
 
@@ -442,7 +442,7 @@ Spawnly/
 <h3>Como a recomendação funciona</h3>
 
 <p>
-A rota <code>/api/recomendar</code> compara <b>edição</b>, <b>versão</b>, <b>bioma</b> e <b>estruturas desejadas</b> com cada seed do catálogo, calcula uma pontuação de compatibilidade e devolve os resultados ordenados do maior para o menor.
+A rota <code>/api/recomendar</code> filtra seeds por <b>edição</b> e <b>versão</b> e calcula até 60 pontos por biomas e 40 por estruturas desejadas, conforme <code>frontend/api/_recomendacao.js</code>. Os resultados são ordenados por pontuação decrescente e, em caso de empate, por ID. Estilos e pesos são salvos nas preferências, mas não alteram a pontuação desta implementação.
 </p>
 
 <img src="assets/divider.svg" alt="" width="100%">
@@ -452,7 +452,7 @@ A rota <code>/api/recomendar</code> compara <b>edição</b>, <b>versão</b>, <b>
 </h2>
 
 <blockquote>
-<b>Só quer jogar?</b> Não precisa instalar nada: acesse <a href="https://spawnly-ten.vercel.app"><b>spawnly-ten.vercel.app</b></a>. Os passos abaixo rodam a versão <b>local</b> (Express + MariaDB) para desenvolvimento.
+<b>Só quer jogar?</b> Não precisa instalar nada: acesse <a href="https://spawnly-six.vercel.app"><b>spawnly-six.vercel.app</b></a>. Os passos abaixo rodam a versão <b>local</b> (Express + MariaDB) para desenvolvimento.
 </blockquote>
 
 <h3>Requisitos</h3>
@@ -475,7 +475,7 @@ A rota <code>/api/recomendar</code> compara <b>edição</b>, <b>versão</b>, <b>
 
 <sub>Conquista desbloqueada: <b>Coletando Recursos</b></sub>
 
-<pre><code>npm install</code></pre>
+<pre><code>npm ci</code></pre>
 
 <h3>Passo 3: Criar o banco de dados</h3>
 
@@ -518,7 +518,7 @@ npm start</code></pre>
 
 <pre><code>http://localhost:3000</code></pre>
 
-<p>A porta pode variar conforme a configuração do <code>server.js</code>.</p>
+<p>A porta pode variar conforme a configuração do <code>server.js</code>. Os testes de integração com MariaDB são executados separadamente com <code>npm run test:integration</code>, após configurar o banco local. <code>npm test</code> não substitui a validação de produção.</p>
 
 <img src="assets/divider.svg" alt="" width="100%">
 
@@ -618,7 +618,7 @@ npm start</code></pre>
 
 <img src="https://img.shields.io/badge/SPAWNLY-PROJETO_ACAD%C3%8AMICO_DE_CRUD-152820?style=for-the-badge&labelColor=4ca66a" alt="Spawnly"><br><br>
 
-<a href="https://spawnly-ten.vercel.app"><b>spawnly-ten.vercel.app</b></a><br><br>
+<a href="https://spawnly-six.vercel.app"><b>spawnly-six.vercel.app</b></a><br><br>
 
 Centro Universitário do Distrito Federal (UDF)<br><br>
 
